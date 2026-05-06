@@ -40,44 +40,10 @@ let appState = {
 };
 
 // ============================================
-// FAQ ACCORDION
-// ============================================
-
-function initializeFAQ() {
-    const faqItems = document.querySelectorAll(".faq-item");
-
-    faqItems.forEach((item) => {
-        const question = item.querySelector(".faq-question");
-        const answer = item.querySelector(".faq-answer");
-
-        question.addEventListener("click", function () {
-            // 1. Check if the current one is already open
-            const isOpen = answer.classList.contains("show");
-
-            // 2. Close ALL items (This ensures "dusra na ho open")
-            document.querySelectorAll(".faq-answer").forEach((el) => {
-                el.classList.remove("show");
-            });
-            document.querySelectorAll(".faq-question").forEach((el) => {
-                el.classList.remove("active");
-            });
-
-            // 3. If the clicked one was closed, open it now
-            if (!isOpen) {
-                answer.classList.add("show");
-                question.classList.add("active");
-            }
-        });
-    });
-}
-
-
-// ============================================
 // INITIALIZATION
 // ============================================
 document.addEventListener("DOMContentLoaded", function () {
   initializeEventListeners();
-  initializeFAQ();
   initializeViewer();
   setupDiscountPeek();
   updateLiveCounter();
@@ -708,3 +674,93 @@ function copyCode() {
     navigator.clipboard.writeText("PUREONE25");
     alert("Code Copied!");
 }
+
+
+// ============================================
+// FAQ ACCORDION
+// ============================================
+
+const faqs = [
+    {
+        question: "How is the purity of Aurelia Peptides verified?",
+        answer: "Every batch undergoes rigorous HPLC (High-Performance Liquid Chromatography) and Mass Spectrometry analysis. We guarantee a minimum purity of 99% and include a batch-specific COA with every research order."
+    },
+    {
+        question: "How should research peptides be stored?",
+        answer: "For short-term storage, peptides are stable at room temperature in lyophilized form. For long-term stability, we recommend refrigeration (2-8°C) or freezing (-20°C). Once reconstituted, they must be kept refrigerated and used within 30 days."
+    },
+    {
+        question: "What is the difference between research-grade and medical-grade?",
+        answer: "Our products are synthesized to pharmaceutical-grade purity but are designated 'For Research Use Only.' They are intended for laboratory in-vitro and preclinical trials, not for human or animal consumption."
+    },
+    {
+        question: "Do you provide batch-specific lab reports?",
+        answer: "Yes. Transparency is our priority. You can access the HPLC/MS reports for your specific batch by scanning the QR code on the vial or entering the batch number in our Research Hub."
+    },
+    {
+        question: "Are the vials shipped with cold packs?",
+        answer: "Our peptides are shipped in a lyophilized (freeze-dried) state, which is highly stable during transit. Studies show that purity remains unaffected by standard shipping temperatures; however, we recommend immediate refrigeration upon receipt."
+    },
+    {
+        question: "How is the shipping handled for privacy?",
+        answer: "All orders are shipped in plain, discreet packaging. There is no mention of 'peptides' or 'research chemicals' on the exterior label to ensure the security and privacy of your laboratory logistics."
+    },
+    {
+        question: "What does 'Lyophilized' mean?",
+        answer: "Lyophilization is a freeze-drying process that removes water while preserving the chemical structure. This results in a stable powder that has a much longer shelf life than liquid-form peptides."
+    },
+    {
+        question: "What payment methods do you accept for research orders?",
+        answer: "We accept all major credit cards (Visa, MasterCard, Amex) through secure, encrypted research-tier gateways, as well as bank transfers for institutional wholesale orders."
+    }
+];
+
+    let open = null;
+
+    document.getElementById('faqs').innerHTML = faqs.map((faq, i) => `
+        <div class="bg-slate-50 p-3.5 rounded-lg cursor-pointer transition-all duration-300 border border-slate-200 hover:bg-slate-100 faq-item" data-index="${i}">
+            <div class="flex items-center justify-between">
+                <span class="text-sm font-medium text-neutral-800">${faq.question}</span>
+                <div class="text-slate-400 p-1 rounded transition-colors icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                </div>
+            </div>
+            <div class="grid grid-rows-[0fr] opacity-0 transition-all duration-300 answer">
+                <div class="overflow-hidden">
+                    <p class="text-sm text-neutral-600 leading-relaxed mt-4">${faq.answer}</p>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.onclick = () => {
+            const i = item.dataset.index;
+            const answer = item.querySelector('.answer');
+            const icon = item.querySelector('.icon');
+            
+            if (open === i) {
+                answer.classList.remove('grid-rows-[1fr]', 'opacity-100');
+                answer.classList.add('grid-rows-[0fr]', 'opacity-0');
+                icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>';
+                icon.classList.remove('bg-slate-200', 'text-slate-500');
+                item.classList.remove('row-span-2');
+                open = null;
+            } else {
+                if (open !== null) {
+                    const prev = document.querySelector(`[data-index="${open}"]`);
+                    prev.querySelector('.answer').classList.remove('grid-rows-[1fr]', 'opacity-100');
+                    prev.querySelector('.answer').classList.add('grid-rows-[0fr]', 'opacity-0');
+                    prev.querySelector('.icon').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>';
+                    prev.querySelector('.icon').classList.remove('bg-slate-200', 'text-slate-500');
+                    prev.classList.remove('row-span-2');
+                }
+                answer.classList.add('grid-rows-[1fr]', 'opacity-100');
+                answer.classList.remove('grid-rows-[0fr]', 'opacity-0');
+                icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>';
+                icon.classList.add('bg-slate-200', 'text-slate-500');
+                item.classList.add('row-span-2');
+                open = i;
+            }
+        };
+    });

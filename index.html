@@ -199,7 +199,7 @@
                             <!-- Row 2: Standard Professional Button (Less Padding) -->
                             <button
                                 class="group/btn w-full py-2.5 bg-white text-[#003E2A] rounded-lg font-black text-[11px] uppercase tracking-widest transition-all hover:bg-gray-50 active:scale-[0.98] flex items-center justify-center space-x-2">
-                                <a href="#supply-plan" >SECURE RESEARCH SUPPLY</a>
+                                <a href="#supply-plan">SECURE RESEARCH SUPPLY</a>
                                 <svg class="w-3 h-3 transition-transform duration-300 group-hover/btn:translate-x-1"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
                                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -1466,95 +1466,18 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-16 px-6 bg-[#FAF6EE]">
-        <div class="max-w-6xl mx-auto">
-
-            <h2 class="text-center text-3xl font-bold text-[#003E2A] mb-2">Frequently Asked Questions</h2>
-            <p class="text-center text-[#003E2A]/70 mb-10">Everything you need to know about PureOne</p>
-
-            <!-- Use items-start to keep the grid rows from stretching unnaturally -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-
-                <!-- Item 1 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        How is PureOne tested and verified?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">Every batch undergoes HPLC analysis and mass spectrometry. A full lab
-                            certificate is included with every order.</p>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        What is the shelf life?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">PureOne has a shelf life of 2 years. We recommend refrigeration at 2–8°C for
-                            optimal stability.</p>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        How quickly does it ship?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">Orders process within 24–48 hours. Standard delivery takes 2–4 business days.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        Do you offer international shipping?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">Yes, we ship worldwide. International delivery usually takes 7–14 business days.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        What is your return policy?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">We offer a 30-day money-back guarantee. Contact support for a hassle-free
-                            refund.</p>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                    <button
-                        class="faq-question w-full p-6 flex justify-between items-center text-left font-semibold text-[#003926] transition">
-                        Is my order private and secure?
-                        <span class="faq-toggle transition-transform duration-300">+</span>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-[#003E2A]/70 border-t border-gray-100">
-                        <p class="pt-4">Yes. All orders are secure and encrypted. Packaging is discreet and private.</p>
-                    </div>
-                </div>
-
-            </div>
+<section class="w-full flex flex-col items-center justify-center py-20 px-4">
+    <div class="w-full max-w-5xl">
+        <div class="mb-10">
+            <h2 class="text-3xl font-semibold text-neutral-900 text-center md:text-start mb-4">Most asked FAQ's</h2>
+            <p class="text-neutral-800 max-w-[416px] text-sm text-center md:text-start mx-auto md:mx-0">We're here to help you and solve doubts. Find answers to the most common questions below.</p>
         </div>
-    </section>
+
+        <div id="faqs" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+            <!-- FAQ Items will be rendered here -->
+        </div>
+    </div>
+</section>
 
     <!-- Final CTA -->
     <section class="border-b border-border/60">
@@ -1614,45 +1537,163 @@
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>PureOne Peptides</h4>
-                    <p>Premium pharmaceutical-grade peptides for research professionals worldwide.</p>
+    <footer class="bg-[#FAF6EE] border-t border-[#003E2A]/10 pt-12 md:pt-20 pb-8 px-4 sm:px-6 font-sans">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- TOP SECTION: Newsletter & Brand (Stacks on Mobile) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 md:pb-16 border-b border-[#003E2A]/5">
+
+                <!-- Brand & Mission -->
+                <div class="lg:col-span-5 space-y-5 md:space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 bg-[#003E2A] text-white rounded-full flex items-center justify-center shadow-lg shrink-0">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M10 2v7.31L3 17.5A2 2 0 0 0 4.73 21h14.54A2 2 0 0 0 21 17.5l-7-8.19V2M8.5 2h7" />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-xl md:text-2xl font-serif text-[#003E2A] tracking-tight whitespace-nowrap">Aurelia
+                            Peptides</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed text-sm max-w-md">
+                        Leading the frontier of peptide synthesis. We provide researchers with documented 99%+ purity
+                        compounds, ensuring precision and reproducibility in every study.
+                    </p>
+
+                    <!-- Trust Badges (Horizontal scrollable on tiny mobile) -->
+                    <div class="flex items-center gap-4 md:gap-6 pt-2 overflow-x-auto pb-2 no-scrollbar opacity-60">
+                        <span
+                            class="text-[9px] md:text-[10px] font-black uppercase tracking-tighter whitespace-nowrap">HPLC
+                            Verified</span>
+                        <div class="w-px h-6 bg-gray-300 shrink-0"></div>
+                        <span
+                            class="text-[9px] md:text-[10px] font-black uppercase tracking-tighter whitespace-nowrap">USA
+                            Lab Tested</span>
+                        <div class="w-px h-6 bg-gray-300 shrink-0"></div>
+                        <span
+                            class="text-[9px] md:text-[10px] font-black uppercase tracking-tighter whitespace-nowrap">Secure
+                            Logistics</span>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Lab Results</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Email Support</a></li>
-                        <li><a href="#">Contact Form</a></li>
-                        <li><a href="#">Research Hub</a></li>
-                    </ul>
+
+                <!-- Newsletter Signup -->
+                <div
+                    class="lg:col-span-7 bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 border border-[#003E2A]/5 shadow-sm">
+                    <h5 class="text-lg font-serif text-[#003E2A] mb-2">Join the Research Network</h5>
+                    <p class="text-sm text-gray-500 mb-6">Receive synthesis updates and exclusive first-access to new
+                        batch releases.</p>
+
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Professional email"
+                            class="flex-1 bg-[#FAF6EE] border-none rounded-xl px-5 py-3.5 text-sm focus:ring-2 focus:ring-[#003E2A]/20 transition-all outline-none">
+                        <button
+                            class="bg-[#003E2A] text-white px-8 py-3.5 rounded-xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all active:scale-95 shadow-lg shadow-[#003E2A]/10">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="mt-3 text-[9px] md:text-[10px] text-gray-400 italic">Confirmation of professional research
+                        status required.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 PureOne Peptides. All rights reserved. | Discreet • Secure • Verified</p>
+
+            <!-- MIDDLE SECTION: Multi-Column Nav -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12 py-12 md:py-16">
+                <div class="space-y-5">
+                    <h6 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#003E2A]">Catalog</h6>
+                    <ul class="space-y-3 text-[13px] md:text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">GLP-3 Agonists</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Growth Factors</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Immune Modulators</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">New Releases</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-5">
+                    <h6 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#003E2A]">Quality</h6>
+                    <ul class="space-y-3 text-[13px] md:text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Batch Reports</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">HPLC/MS Library</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Methodology</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-5">
+                    <h6 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#003E2A]">Support</h6>
+                    <ul class="space-y-3 text-[13px] md:text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Shipping</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Discreet Packaging</a></li>
+                        <li><a href="#" class="hover:text-[#003E2A] transition-colors">Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-5">
+                    <h6 class="text-[10px] font-black uppercase tracking-[0.2em] text-[#003E2A]">Security</h6>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2 grayscale opacity-40">
+                            <div class="px-1.5 py-0.5 border border-gray-400 rounded text-[8px] font-bold">SSL</div>
+                            <div class="px-1.5 py-0.5 border border-gray-400 rounded text-[8px] font-bold">256-BIT</div>
+                            <div class="px-1.5 py-0.5 border border-gray-400 rounded text-[8px] font-bold">PCI</div>
+                        </div>
+                        <p class="text-[9px] md:text-[10px] text-gray-400 leading-relaxed uppercase font-medium">
+                            Secure research-tier gateways.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOWER SECTION: Animated Alert (Enhanced Mobile Layout) -->
+            <div
+                class="bg-white/80 rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 border border-amber-200 relative overflow-hidden group mb-10">
+                <div class="absolute inset-0 bg-amber-50/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div class="relative z-10">
+                    <div class="flex items-start md:items-center gap-4 mb-5 md:mb-6">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 shrink-0">
+                            <span class="absolute inset-0 rounded-full bg-amber-400 animate-ping opacity-20"></span>
+                            <svg class="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="2.5">
+                                <path
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="text-[11px] font-black uppercase tracking-[0.15em] text-[#003E2A]">Research Use
+                                Only (RUO)</h5>
+                            <p class="text-[9px] font-bold text-amber-700/70 uppercase md:hidden">Legal Compliance</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-[11px] text-gray-500 leading-relaxed">
+                        <p>
+                            All products sold by <span class="font-bold text-[#003E2A]">Aurelia Peptides</span> are
+                            strictly for in-vitro laboratory research. Not approved by the FDA for human or animal use.
+                            Not intended to diagnose, treat, or prevent any disease.
+                        </p>
+                        <p class="border-t md:border-t-0 md:border-l border-amber-100 pt-4 md:pt-0 md:pl-6 italic">
+                            By using this site, you certify status as a qualified researcher. Aurelia Peptides assumes
+                            no liability for misuse. References to clinical literature are for informational context
+                            only.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT BOTTOM (Responsive Flex) -->
+            <div
+                class="pt-8 border-t border-[#003E2A]/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] md:text-[10px] font-black uppercase tracking-[0.15em] text-gray-400 text-center md:text-left">
+                <div class="flex flex-wrap justify-center gap-3 md:gap-5">
+                    <span>&copy; 2026 Aurelia Peptides</span>
+                    <a href="#" class="hover:text-[#003E2A]">Privacy</a>
+                    <a href="#" class="hover:text-[#003E2A]">Terms</a>
+                </div>
+                <div class="flex items-center gap-5">
+                    <span class="text-[#003E2A]/30">Global Logistics</span>
+                    <span class="hidden sm:inline w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span class="text-[#003E2A]/30">Batch: AP-2026-V1</span>
+                </div>
             </div>
         </div>
     </footer>
+
 
     <!-- Discount Peek -->
     <div id="discountPeek" class="fixed bottom-6 left-6 z-50 hidden">
@@ -1688,70 +1729,78 @@
         </button>
     </div>
 
-<!-- Background Overlay: Adjusted padding for mobile (p-4) -->
-<div id="discountModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-[#003E2A]/80 backdrop-blur-md p-4 sm:p-6">
+    <!-- Background Overlay: Adjusted padding for mobile (p-4) -->
+    <div id="discountModal"
+        class="fixed inset-0 z-[200] hidden items-center justify-center bg-[#003E2A]/80 backdrop-blur-md p-4 sm:p-6">
 
-    <!-- Modal Container: max-h-full ensures it fits within any screen height -->
-    <div class="bg-[#FAF6EE] w-full max-w-4xl rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2 relative max-h-[95vh] overflow-y-auto md:overflow-visible">
+        <!-- Modal Container: max-h-full ensures it fits within any screen height -->
+        <div
+            class="bg-[#FAF6EE] w-full max-w-4xl rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2 relative max-h-[95vh] overflow-y-auto md:overflow-visible">
 
-        <!-- Close Button: Moved slightly for easier thumb access on mobile -->
-        <button onclick="closeDiscountModal()" class="absolute top-3 right-3 z-30 bg-white/90 text-[#003E2A] w-9 h-9 rounded-full flex items-center justify-center shadow-md active:scale-90 transition-transform">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
+            <!-- Close Button: Moved slightly for easier thumb access on mobile -->
+            <button onclick="closeDiscountModal()"
+                class="absolute top-3 right-3 z-30 bg-white/90 text-[#003E2A] w-9 h-9 rounded-full flex items-center justify-center shadow-md active:scale-90 transition-transform">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
 
-        <!-- Left Column: Image -->
-        <!-- h-40 on mobile keeps the focus on the text, md:h-full for desktop -->
-        <div class="relative h-40 md:h-full">
-            <img src="/product-hero.jpg" class="w-full h-full object-cover" alt="Product Offer">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#003E2A]/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-6 hidden md:block">
-                <span class="text-[10px] font-black uppercase tracking-widest bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-white border border-white/20">
-                    Boutique Research
-                </span>
-            </div>
-        </div>
-
-        <!-- Right Column: Content -->
-        <div class="p-6 md:p-12 flex flex-col justify-center">
-            
-            <header class="text-center md:text-left">
-                <p class="text-[10px] font-black uppercase tracking-[0.2em] text-green-800/60 mb-1">
-                    Limited Time Access
-                </p>
-                <h2 class="text-3xl md:text-5xl font-serif text-[#003E2A] leading-[1.1]">
-                    Get <span class="italic">25% Off</span><br class="hidden md:block">
-                    <span class="text-2xl md:text-4xl">your first order</span>
-                </h2>
-            </header>
-
-            <!-- Code Box: Stacked slightly tighter for mobile -->
-            <div class="mt-6 md:mt-8">
-                <div class="flex flex-col sm:flex-row items-center gap-3 border-2 border-dashed border-[#003E2A]/20 rounded-2xl p-3 bg-white/50">
-                    <span class="font-mono text-xl font-bold tracking-[0.2em] text-[#003E2A] sm:ml-2">
-                        PUREONE25
+            <!-- Left Column: Image -->
+            <!-- h-40 on mobile keeps the focus on the text, md:h-full for desktop -->
+            <div class="relative h-40 md:h-full">
+                <img src="/product-hero.jpg" class="w-full h-full object-cover" alt="Product Offer">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#003E2A]/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-6 hidden md:block">
+                    <span
+                        class="text-[10px] font-black uppercase tracking-widest bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-white border border-white/20">
+                        Boutique Research
                     </span>
-                    <button onclick="copyCode()" class="w-full sm:w-auto bg-[#003E2A] text-white text-[11px] font-black uppercase tracking-widest px-6 py-2.5 rounded-xl hover:bg-black transition-all active:scale-95">
-                        Copy
-                    </button>
                 </div>
             </div>
 
-            <!-- Primary Action -->
-            <button onclick="scrollToElement('supply'); closeDiscountModal();"
-                class="mt-4 w-full bg-green-800 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-[0.15em] shadow-lg active:scale-[0.98] transition-all">
-                Claim Offer & Shop
-            </button>
+            <!-- Right Column: Content -->
+            <div class="p-6 md:p-12 flex flex-col justify-center">
 
-            <!-- Footer -->
-            <div class="mt-5 text-center md:text-left">
-                <p class="text-[9px] font-bold text-gray-400 uppercase tracking-wide">
-                    24h Expiry • Verified Researchers Only
-                </p>
+                <header class="text-center md:text-left">
+                    <p class="text-[10px] font-black uppercase tracking-[0.2em] text-green-800/60 mb-1">
+                        Limited Time Access
+                    </p>
+                    <h2 class="text-3xl md:text-5xl font-serif text-[#003E2A] leading-[1.1]">
+                        Get <span class="italic">25% Off</span><br class="hidden md:block">
+                        <span class="text-2xl md:text-4xl">your first order</span>
+                    </h2>
+                </header>
+
+                <!-- Code Box: Stacked slightly tighter for mobile -->
+                <div class="mt-6 md:mt-8">
+                    <div
+                        class="flex flex-col sm:flex-row items-center gap-3 border-2 border-dashed border-[#003E2A]/20 rounded-2xl p-3 bg-white/50">
+                        <span class="font-mono text-xl font-bold tracking-[0.2em] text-[#003E2A] sm:ml-2">
+                            PUREONE25
+                        </span>
+                        <button onclick="copyCode()"
+                            class="w-full sm:w-auto bg-[#003E2A] text-white text-[11px] font-black uppercase tracking-widest px-6 py-2.5 rounded-xl hover:bg-black transition-all active:scale-95">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Primary Action -->
+                <button onclick="scrollToElement('supply'); closeDiscountModal();"
+                    class="mt-4 w-full bg-green-800 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-[0.15em] shadow-lg active:scale-[0.98] transition-all">
+                    Claim Offer & Shop
+                </button>
+
+                <!-- Footer -->
+                <div class="mt-5 text-center md:text-left">
+                    <p class="text-[9px] font-bold text-gray-400 uppercase tracking-wide">
+                        24h Expiry • Verified Researchers Only
+                    </p>
+                </div>
+
             </div>
-
         </div>
     </div>
-</div>
 
 
     <!-- Modal -->
