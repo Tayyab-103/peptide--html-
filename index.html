@@ -8,77 +8,88 @@
         content="PureOne Peptides - Premium pharmaceutical-grade peptide supplements. Lab-tested, clinically formulated, science-backed results.">
     <meta name="theme-color" content="#0f172a">
     <title>PureOne Peptides - Premium Research Peptides</title>
+    <link rel="icon" type="image/jpeg" href="product-peek.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="dark-theme">
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <div class="announcement-inner">
-            <div class="left">✨ SPRING 2026 LIMITED RELEASE</div>
-
-            <div class="center">
-                Save 22% on first orders — ends in
-                <span id="countdown">00:00:00</span>
+    <!-- 1. Announcement Bar (Sticky at Top 0) -->
+    <div class="sticky top-0 z-[100] bg-[#003E2A] text-[#FAF6EE] py-2 px-4 shadow-md">
+        <div
+            class="max-w-7xl mx-auto flex justify-between items-center text-[10px] md:text-xs font-bold tracking-widest uppercase">
+            <!-- Left (Hidden on Mobile) -->
+            <div class="hidden md:block opacity-80">
+                ✨ Spring 2026 Limited Release
             </div>
 
-            <div class="right">FREE US SHIPPING OVER $150</div>
+            <!-- Center (Timer) -->
+            <div class="flex-1 md:flex-none text-center">
+                Save 22% on first orders — ends in
+                <span id="countdown" class="text-white ml-1 font-black tabular-nums">00:00:00</span>
+            </div>
+
+            <!-- Right (Hidden on Mobile) -->
+            <div class="hidden md:block opacity-80">
+                Free US Shipping Over $150
+            </div>
         </div>
     </div>
 
-    <!-- Site Header -->
-    <header class="site-header">
-        <div class="header-container">
+    <!-- 2. Site Header (Sticky at Top of Bar Height) -->
+    <!-- Note: h-10 (40px) is the standard height of the bar above -->
+    <header class="sticky top-10 md:top-9 z-[90] bg-[#FAF6EE]/90 backdrop-blur-md border-b border-[#003E2A]/5">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
 
-            <!-- Left: Brand Logo -->
-            <div class="brand">
-                <div class="logo-icon">
-                    <!-- Flask SVG Icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round">
+            <!-- Brand Logo -->
+            <div class="flex items-center space-x-3 shrink-0">
+                <div
+                    class="w-10 h-10 bg-[#003E2A] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#003E2A]/20">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M10 2v7.31L3 17.5A2 2 0 0 0 4.73 21h14.54A2 2 0 0 0 21 17.5l-7-8.19V2M8.5 2h7" />
                     </svg>
                 </div>
-                <span class="logo-text">Aurelia Peptides</span>
+                <span class="text-xl md:text-2xl font-serif text-[#003E2A] tracking-tight">Aurelia Peptides</span>
             </div>
 
-            <!-- Center: Navigation Links -->
-            <nav class="nav-links">
-                <a href="#product">Product</a>
-                <a href="#science">Science</a>
-                <a href="#compare">Compare</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#faq">FAQ</a>
+            <!-- Center Navigation (Hidden on Mobile) -->
+            <nav
+                class="hidden lg:flex items-center space-x-10 text-sm font-bold uppercase tracking-widest text-[#003E2A]/70">
+                <a href="#product" class="hover:text-[#003E2A] transition-colors">Product</a>
+                <a href="#lab-results" class="hover:text-[#003E2A] transition-colors">Lab Results</a>
+                <a href="#compare" class="hover:text-[#003E2A] transition-colors">Compare</a>
+                <a href="#faq" class="hover:text-[#003E2A] transition-colors">FAQ</a>
             </nav>
 
-            <!-- Right: Actions -->
-            <div class="header-actions">
-                <button class="search-btn" aria-label="Search">
-                    <!-- Search SVG Icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round">
+            <!-- Actions -->
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <!-- Search (Hidden on small mobile) -->
+                <button class="p-2 text-[#003E2A] hover:scale-110 transition-transform">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </button>
 
-                <a href="#order" class="order-btn">
-                    <!-- Shopping Bag SVG Icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round">
+                <!-- Order Button -->
+                <a href="#order"
+                    class="hidden sm:flex items-center space-x-2 bg-[#111] text-white px-5 py-2.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black transition-all hover:shadow-xl active:scale-95">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>
-                    Order Now
+                    <span>Order Now</span>
                 </a>
 
                 <!-- Mobile Menu Toggle -->
-                <button class="nav-toggle" id="navToggle">☰</button>
+                <button class="lg:hidden p-2 text-[#003E2A]" id="navToggle">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                    </svg>
+                </button>
             </div>
-
         </div>
     </header>
 
@@ -785,7 +796,7 @@
 
 
     <!-- Quality & Ingredients -->
-    <section class=" border-border/60">
+    <section id="lab-results" class=" border-border/60">
         <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
 
             <!-- Top Card -->
@@ -961,7 +972,7 @@
     </section>
 
     <!-- Peptides Collection -->
-    <section>
+    <section id="product">
         <h1 class="text-3xl font-semibold text-center mx-auto">Peptides Collection</h1>
         <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">Our latest breakthrough formulations. Each
             batch is stringently tested for identity and potency to ensure your research never compromises on quality..
@@ -1437,7 +1448,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="bg-[#FEFCF7] py-16 px-4">
+    <section id="reviews" class="bg-[#FEFCF7] py-16 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-8">
                 <div class="inline-block bg-neutral-100 border border-neutral-300 rounded-full px-4 py-1 mb-3">
