@@ -29,39 +29,6 @@ const tierData = {
   },
 };
 
-const faqData = [
-  {
-    question: "How is PureOne tested and verified?",
-    answer:
-      "Every batch of PureOne undergoes rigorous testing including HPLC analysis, mass spectrometry, and sterility testing. A full lab certificate of analysis is included with every order, detailing purity, potency, and quality metrics.",
-  },
-  {
-    question: "What is the shelf life?",
-    answer:
-      "PureOne has a shelf life of 2 years when stored properly in a cool, dark place. Our UV-protected vials maintain stability and potency throughout this entire period. We recommend storing at 2-8°C for optimal preservation.",
-  },
-  {
-    question: "How quickly does it ship?",
-    answer:
-      "Orders ship within 48 hours of confirmation. We offer both standard and priority shipping options. All packages are discreetly labeled and packaged for privacy. Domestic delivery typically takes 2-4 business days.",
-  },
-  {
-    question: "Do you offer international shipping?",
-    answer:
-      "Yes, we ship worldwide with customs-compliant packaging. International orders may take 7-14 business days depending on destination. We handle all customs documentation and ensure compliance with local regulations.",
-  },
-  {
-    question: "What is your return policy?",
-    answer:
-      "We offer a 30-day money-back guarantee. If you're not satisfied with your order for any reason, contact our support team for a full refund. No questions asked. We stand behind the quality of our products.",
-  },
-  {
-    question: "Is my order private and secure?",
-    answer:
-      "Absolutely. All orders are processed through encrypted secure checkout. Packages are labeled discreetly with no product names visible. We never share customer information with third parties and delete all data after 90 days.",
-  },
-];
-
 // ============================================
 // STATE MANAGEMENT
 // ============================================
@@ -71,6 +38,39 @@ let appState = {
   isSubscription: false,
   selectedImage: "/product-hero.jpg",
 };
+
+// ============================================
+// FAQ ACCORDION
+// ============================================
+
+function initializeFAQ() {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+
+        question.addEventListener("click", function () {
+            // 1. Check if the current one is already open
+            const isOpen = answer.classList.contains("show");
+
+            // 2. Close ALL items (This ensures "dusra na ho open")
+            document.querySelectorAll(".faq-answer").forEach((el) => {
+                el.classList.remove("show");
+            });
+            document.querySelectorAll(".faq-question").forEach((el) => {
+                el.classList.remove("active");
+            });
+
+            // 3. If the clicked one was closed, open it now
+            if (!isOpen) {
+                answer.classList.add("show");
+                question.classList.add("active");
+            }
+        });
+    });
+}
+
 
 // ============================================
 // INITIALIZATION
@@ -258,88 +258,6 @@ function switchImage(src) {
   }
 }
 
-// ============================================
-// FAQ ACCORDION
-// ============================================
-
-function initializeFAQ() {
-  const faqItems = document.querySelectorAll(".faq-item");
-
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-
-    question.addEventListener("click", function () {
-      const isOpen = answer.classList.contains("show");
-
-      // Close all
-      document.querySelectorAll(".faq-answer").forEach((a) => {
-        a.classList.remove("show");
-      });
-
-      document.querySelectorAll(".faq-question").forEach((q) => {
-        q.classList.remove("active");
-      });
-
-      // Open current
-      if (!isOpen) {
-        answer.classList.add("show");
-        question.classList.add("active");
-      }
-    });
-  });
-}
-
-// ============================================
-// DISCOUNT PEEK & MODAL
-// ============================================
-function setupDiscountPeek() {
-  // Show peek after 5 seconds
-  setTimeout(() => {
-    const peek = document.getElementById("discountPeek");
-    if (peek) {
-      peek.classList.add("show");
-    }
-  }, 5000);
-
-  // Countdown timer
-  startCountdown();
-}
-
-function closePeek() {
-  const peek = document.getElementById("discountPeek");
-  if (peek) {
-    peek.classList.remove("show");
-  }
-}
-
-function openDiscountModal() {
-  const modal = document.getElementById("discountModal");
-  if (modal) {
-    modal.classList.add("show");
-    document.body.style.overflow = "hidden";
-  }
-}
-
-function closeDiscountModal() {
-  const modal = document.getElementById("discountModal");
-  if (modal) {
-    modal.classList.remove("show");
-    document.body.style.overflow = "auto";
-  }
-}
-
-function startCountdown() {
-  let hours = 24;
-  const countdownEl = document.getElementById("countdown");
-
-  setInterval(() => {
-    hours--;
-    if (countdownEl) {
-      countdownEl.textContent = hours > 0 ? hours : "0";
-    }
-  }, 3600000); // Update every hour
-}
 
 // ============================================
 // LIVE COUNTER
@@ -758,3 +676,35 @@ function update() {
 }
  
 update(); 
+
+
+
+// Discount Peek
+
+// Show after 6s
+setTimeout(() => {
+    document.getElementById("discountPeek").classList.remove("hidden");
+}, 3000);
+
+// Open Modal
+function openDiscountModal() {
+    document.getElementById("discountModal").classList.remove("hidden");
+    document.getElementById("discountModal").classList.add("flex");
+}
+
+// Close Modal
+function closeDiscountModal() {
+    document.getElementById("discountModal").classList.add("hidden");
+    document.getElementById("discountModal").classList.remove("flex");
+}
+
+// Close Peek
+function closePeek() {
+    document.getElementById("discountPeek").style.display = "none";
+}
+
+// Copy Code
+function copyCode() {
+    navigator.clipboard.writeText("PUREONE25");
+    alert("Code Copied!");
+}
