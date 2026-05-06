@@ -199,7 +199,7 @@
                             <!-- Row 2: Standard Professional Button (Less Padding) -->
                             <button
                                 class="group/btn w-full py-2.5 bg-white text-[#003E2A] rounded-lg font-black text-[11px] uppercase tracking-widest transition-all hover:bg-gray-50 active:scale-[0.98] flex items-center justify-center space-x-2">
-                                <span>SECURE RESEARCH SUPPLY</span>
+                                <a href="#supply-plan" >SECURE RESEARCH SUPPLY</a>
                                 <svg class="w-3 h-3 transition-transform duration-300 group-hover/btn:translate-x-1"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
                                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -216,8 +216,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="flex items-center mt-9">
                     <div class="flex -space-x-3.5 pr-3">
@@ -333,7 +331,7 @@
     </section>
 
     <!-- Choose Your Supply Section -->
-    <section class="py-20 px-4">
+    <section id="supply-plan" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
 
             <!-- Header -->
@@ -1690,69 +1688,70 @@
         </button>
     </div>
 
-    <!-- Discount Modal -->
-    <div id="discountModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm">
+<!-- Background Overlay: Adjusted padding for mobile (p-4) -->
+<div id="discountModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-[#003E2A]/80 backdrop-blur-md p-4 sm:p-6">
 
-        <div class="bg-[#FAF6EE] w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl grid md:grid-cols-2 relative">
+    <!-- Modal Container: max-h-full ensures it fits within any screen height -->
+    <div class="bg-[#FAF6EE] w-full max-w-4xl rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2 relative max-h-[95vh] overflow-y-auto md:overflow-visible">
 
-            <!-- Close -->
-            <button onclick="closeDiscountModal()" class="absolute top-4 right-4 z-10 bg-white/80 w-8 h-8 rounded-full">
-                ×
-            </button>
+        <!-- Close Button: Moved slightly for easier thumb access on mobile -->
+        <button onclick="closeDiscountModal()" class="absolute top-3 right-3 z-30 bg-white/90 text-[#003E2A] w-9 h-9 rounded-full flex items-center justify-center shadow-md active:scale-90 transition-transform">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
 
-            <!-- Left Image -->
-            <div class="relative h-64 md:h-auto">
-                <img src="/product-hero.jpg" class="w-full h-full object-cover">
-
-                <div class="absolute inset-0 bg-gradient-to-tr from-black/40 to-green-400/20"></div>
-
-                <div class="absolute bottom-4 left-4 text-white text-xs uppercase tracking-widest">
-                    ✨ First Time Offer
-                </div>
+        <!-- Left Column: Image -->
+        <!-- h-40 on mobile keeps the focus on the text, md:h-full for desktop -->
+        <div class="relative h-40 md:h-full">
+            <img src="/product-hero.jpg" class="w-full h-full object-cover" alt="Product Offer">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#003E2A]/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-6 hidden md:block">
+                <span class="text-[10px] font-black uppercase tracking-widest bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-white border border-white/20">
+                    Boutique Research
+                </span>
             </div>
+        </div>
 
-            <!-- Content -->
-            <div class="p-6 md:p-8">
-
-                <p class="text-xs uppercase tracking-widest text-green-700">
-                    Welcome offer
+        <!-- Right Column: Content -->
+        <div class="p-6 md:p-12 flex flex-col justify-center">
+            
+            <header class="text-center md:text-left">
+                <p class="text-[10px] font-black uppercase tracking-[0.2em] text-green-800/60 mb-1">
+                    Limited Time Access
                 </p>
-
-                <h2 class="mt-2 text-3xl font-serif">
-                    Get <span class="italic text-green-800">25% Off</span><br>
-                    your first order
+                <h2 class="text-3xl md:text-5xl font-serif text-[#003E2A] leading-[1.1]">
+                    Get <span class="italic">25% Off</span><br class="hidden md:block">
+                    <span class="text-2xl md:text-4xl">your first order</span>
                 </h2>
+            </header>
 
-                <p class="mt-3 text-sm text-gray-500">
-                    Limited-time discount for new customers. Use the code below at checkout.
-                </p>
-
-                <!-- Code Box -->
-                <div class="mt-5 flex items-center justify-between border border-dashed rounded-xl p-3 bg-white">
-
-                    <span class="font-mono text-lg tracking-widest">
+            <!-- Code Box: Stacked slightly tighter for mobile -->
+            <div class="mt-6 md:mt-8">
+                <div class="flex flex-col sm:flex-row items-center gap-3 border-2 border-dashed border-[#003E2A]/20 rounded-2xl p-3 bg-white/50">
+                    <span class="font-mono text-xl font-bold tracking-[0.2em] text-[#003E2A] sm:ml-2">
                         PUREONE25
                     </span>
-
-                    <button onclick="copyCode()" class="bg-black text-white text-xs px-3 py-1.5 rounded-lg">
+                    <button onclick="copyCode()" class="w-full sm:w-auto bg-[#003E2A] text-white text-[11px] font-black uppercase tracking-widest px-6 py-2.5 rounded-xl hover:bg-black transition-all active:scale-95">
                         Copy
                     </button>
                 </div>
+            </div>
 
-                <!-- Button -->
-                <button onclick="scrollToElement('supply'); closeDiscountModal();"
-                    class="mt-4 w-full bg-green-800 text-white py-3 rounded-xl">
-                    Apply & Shop Now
-                </button>
+            <!-- Primary Action -->
+            <button onclick="scrollToElement('supply'); closeDiscountModal();"
+                class="mt-4 w-full bg-green-800 text-white py-4 rounded-2xl font-black text-xs uppercase tracking-[0.15em] shadow-lg active:scale-[0.98] transition-all">
+                Claim Offer & Shop
+            </button>
 
-                <p class="text-center text-xs text-gray-400 mt-3">
-                    Valid for 24 hours · One-time use
+            <!-- Footer -->
+            <div class="mt-5 text-center md:text-left">
+                <p class="text-[9px] font-bold text-gray-400 uppercase tracking-wide">
+                    24h Expiry • Verified Researchers Only
                 </p>
-
             </div>
 
         </div>
     </div>
+</div>
 
 
     <!-- Modal -->
