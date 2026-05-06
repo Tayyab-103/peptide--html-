@@ -549,28 +549,27 @@ p {
 /* ============================================
    LOGO MARQUEE
    ============================================ */
-.logo-marquee {
-    background-color: var(--bg-card);
-    padding: 2rem;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    overflow: hidden;
-}
-
-.marquee-content {
+.marquee {
     display: flex;
-    gap: 2rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee span {
+    font-size: 24px;
+    opacity: 0.5;
     white-space: nowrap;
-    animation: scroll-marquee 20s linear infinite;
-    color: var(--text-secondary);
-    font-weight: 500;
+    font-family: serif;
 }
 
-@keyframes scroll-marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
-
 /* ============================================
    SUPPLY SECTION
    ============================================ */
@@ -1218,3 +1217,19 @@ p {
     }
 }
 
+
+/* modal css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.25s ease;
+}

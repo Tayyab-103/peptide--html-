@@ -136,113 +136,498 @@
     </section>
 
     <!-- Logo Marquee -->
-    <section class="logo-marquee">
-        <div class="marquee-content">
-            <span>Pharmaceutical Grade</span>
-            <span>•</span>
-            <span>Lab Verified</span>
-            <span>•</span>
-            <span>Clinically Formulated</span>
-            <span>•</span>
-            <span>Discreet Shipping</span>
-            <span>•</span>
-            <span>30-Day Guarantee</span>
-            <span>•</span>
-            <span>Pharmaceutical Grade</span>
-            <span>•</span>
-            <span>Lab Verified</span>
+    <section class="border-b border-gray-200 py-6">
+
+        <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-4">
+            As featured in
+        </p>
+
+        <div class="overflow-hidden relative">
+            <div class="marquee flex gap-12 px-6">
+
+                <span>Forbes</span>
+                <span>Wired</span>
+                <span>Bloomberg</span>
+                <span>Men's Health</span>
+                <span>TechCrunch</span>
+                <span>Fortune</span>
+                <span>The Verge</span>
+                <span>Vogue</span>
+
+                <!-- duplicate for smooth loop -->
+                <span>Forbes</span>
+                <span>Wired</span>
+                <span>Bloomberg</span>
+                <span>Men's Health</span>
+                <span>TechCrunch</span>
+                <span>Fortune</span>
+                <span>The Verge</span>
+                <span>Vogue</span>
+
+            </div>
         </div>
+
     </section>
 
     <!-- Choose Your Supply Section -->
-    <section class="supply-section" id="supply">
-        <div class="supply-container">
-            <h2>Choose Your Supply</h2>
-            <p class="section-subtitle">Select the perfect dosage and quantity for your research needs</p>
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
 
-            <div class="toggle-box">
-                <label class="toggle-label">
-                    <input type="checkbox" id="subscribeToggle" class="toggle-input">
-                    <span>Subscribe & Save 10%</span>
-                </label>
+            <!-- Header -->
+            <div class="text-center max-w-2xl mx-auto">
+                <p class="text-xs tracking-[0.2em] uppercase text-gray-500">STEP 01 — PICK YOUR PLAN</p>
+                <h2 class="mt-3 text-5xl font-serif text-gray-900">Choose Your <span class="italic">Supply</span></h2>
+                <p class="mt-4 text-gray-500 text-sm leading-relaxed">Larger supplies unlock subscriber pricing, faster
+                    shipping, and bonus inclusions.</p>
             </div>
 
-            <div class="supply-cards">
-                <div class="supply-card" data-tier="starter">
-                    <div class="card-header">
-                        <h3>Starter</h3>
-                        <p class="card-desc">Single Dose</p>
+            <!-- Banner -->
+            <div
+                class="relative mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-green-800/40 bg-[#003E2A] text-white shadow-lg">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-6">
+
+                    <!-- Left -->
+                    <div class="flex items-center gap-4">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 shrink-0">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8"
+                                viewBox="0 0 24 24">
+                                <rect x="3" y="8" width="18" height="13" rx="2"></rect>
+                                <path d="M12 8v13M3 12h18"></path>
+                                <path d="M12 8c-1.5-2-4-2-4-0.5S10 10 12 8zm0 0c1.5-2 4-2 4-0.5S14 10 12 8z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.18em] text-white/70">Limited Time Offer</p>
+                            <p class="font-serif text-2xl text-white/90 mt-0.5">Buy 2, Get 1 <span
+                                    class="italic">Free</span></p>
+                        </div>
                     </div>
-                    <div class="price-box">
-                        <span class="price" id="price-starter">$99</span>
-                        <span class="period">/one-time</span>
+
+                    <!-- Center: vials illustration -->
+                    <div class="flex items-end justify-center gap-2 py-1">
+                        <!-- Vial 1 -->
+                        <svg width="28" height="72" viewBox="0 0 28 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="opacity-90">
+                            <rect x="9" y="0" width="10" height="6" rx="2" fill="white" fill-opacity="0.3" />
+                            <rect x="7" y="6" width="14" height="4" rx="1" fill="white" fill-opacity="0.2" />
+                            <rect x="5" y="10" width="18" height="52" rx="4" fill="white" fill-opacity="0.12" />
+                            <rect x="5" y="10" width="18" height="52" rx="4" stroke="white" stroke-opacity="0.3"
+                                stroke-width="1" />
+                            <rect x="5" y="38" width="18" height="24" rx="0" fill="white" fill-opacity="0.08" />
+                            <rect x="5" y="58" width="18" height="4" rx="2" fill="#4ade80" fill-opacity="0.5" />
+                            <rect x="8" y="14" width="4" height="20" rx="2" fill="white" fill-opacity="0.15" />
+                        </svg>
+                        <!-- Vial 2 (taller/center) -->
+                        <svg width="32" height="82" viewBox="0 0 32 82" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="opacity-100">
+                            <rect x="11" y="0" width="10" height="7" rx="2" fill="white" fill-opacity="0.4" />
+                            <rect x="8" y="7" width="16" height="4" rx="1" fill="white" fill-opacity="0.25" />
+                            <rect x="5" y="11" width="22" height="60" rx="5" fill="white" fill-opacity="0.18" />
+                            <rect x="5" y="11" width="22" height="60" rx="5" stroke="white" stroke-opacity="0.4"
+                                stroke-width="1.2" />
+                            <rect x="5" y="42" width="22" height="29" rx="0" fill="white" fill-opacity="0.08" />
+                            <rect x="5" y="66" width="22" height="5" rx="2.5" fill="#4ade80" fill-opacity="0.6" />
+                            <rect x="9" y="15" width="5" height="24" rx="2.5" fill="white" fill-opacity="0.18" />
+                        </svg>
+                        <!-- Vial 3 -->
+                        <svg width="28" height="72" viewBox="0 0 28 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="opacity-90">
+                            <rect x="9" y="0" width="10" height="6" rx="2" fill="white" fill-opacity="0.3" />
+                            <rect x="7" y="6" width="14" height="4" rx="1" fill="white" fill-opacity="0.2" />
+                            <rect x="5" y="10" width="18" height="52" rx="4" fill="white" fill-opacity="0.12" />
+                            <rect x="5" y="10" width="18" height="52" rx="4" stroke="white" stroke-opacity="0.3"
+                                stroke-width="1" />
+                            <rect x="5" y="38" width="18" height="24" rx="0" fill="white" fill-opacity="0.08" />
+                            <rect x="5" y="58" width="18" height="4" rx="2" fill="#4ade80" fill-opacity="0.5" />
+                            <rect x="8" y="14" width="4" height="20" rx="2" fill="white" fill-opacity="0.15" />
+                        </svg>
+                        <span class="text-white/40 text-xl font-light pb-1">+</span>
+                        <!-- Free vial (glowing) -->
+                        <svg width="32" height="82" viewBox="0 0 32 82" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="filter: drop-shadow(0 0 8px rgba(74,222,128,0.6))">
+                            <rect x="11" y="0" width="10" height="7" rx="2" fill="#4ade80" fill-opacity="0.7" />
+                            <rect x="8" y="7" width="16" height="4" rx="1" fill="#4ade80" fill-opacity="0.4" />
+                            <rect x="5" y="11" width="22" height="60" rx="5" fill="#4ade80" fill-opacity="0.15" />
+                            <rect x="5" y="11" width="22" height="60" rx="5" stroke="#4ade80" stroke-opacity="0.6"
+                                stroke-width="1.5" />
+                            <rect x="5" y="42" width="22" height="29" rx="0" fill="#4ade80" fill-opacity="0.1" />
+                            <rect x="5" y="66" width="22" height="5" rx="2.5" fill="#4ade80" fill-opacity="0.8" />
+                            <rect x="9" y="15" width="5" height="24" rx="2.5" fill="#4ade80" fill-opacity="0.25" />
+                            <text x="16" y="38" font-size="9" fill="white" fill-opacity="0.9" text-anchor="middle"
+                                font-family="sans-serif" font-weight="bold">FREE</text>
+                        </svg>
                     </div>
-                    <ul class="features-list">
-                        <li class="included">✓ Single 10mg Vial</li>
-                        <li class="included">✓ Lab Certificate</li>
-                        <li class="included">✓ Secure Packaging</li>
-                        <li class="excluded">✗ Priority Support</li>
-                        <li class="excluded">✗ Free Shipping</li>
-                    </ul>
-                    <button class="btn-select" onclick="selectTier('starter')">Select Starter</button>
+
+                    <!-- Right -->
+                    <div class="flex flex-col items-start gap-1 text-sm sm:items-end sm:text-right">
+                        <p class="text-neutral-200/80">Auto-applied at checkout on Researcher Supply</p>
+                        <p class="font-mono text-xs text-neutral-200/60">Code: <span
+                                class="rounded bg-white/10 px-1.5 py-0.5">B2G1FREE</span></p>
+                    </div>
                 </div>
 
-                <div class="supply-card featured" data-tier="standard">
-                    <div class="ribbon">Best Value</div>
-                    <div class="card-header">
-                        <h3>Standard</h3>
-                        <p class="card-desc">3-Month Supply</p>
-                    </div>
-                    <div class="price-box">
-                        <span class="price" id="price-standard">$259</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features-list">
-                        <li class="included">✓ 3 × 10mg Vials</li>
-                        <li class="included">✓ Lab Certificates</li>
-                        <li class="included">✓ Priority Support</li>
-                        <li class="included">✓ Free Shipping</li>
-                        <li class="excluded">✗ VIP Research Support</li>
-                    </ul>
-                    <button class="btn-select featured-select" onclick="selectTier('standard')">Select Standard</button>
+                <div class="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl">
                 </div>
-
-                <div class="supply-card" data-tier="researcher">
-                    <div class="card-header">
-                        <h3>Researcher</h3>
-                        <p class="card-desc">6-Month Supply</p>
-                    </div>
-                    <div class="price-box">
-                        <span class="price" id="price-researcher">$449</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features-list">
-                        <li class="included">✓ 6 × 10mg Vials</li>
-                        <li class="included">✓ Lab Certificates</li>
-                        <li class="included">✓ VIP Support 24/7</li>
-                        <li class="included">✓ Priority Shipping</li>
-                        <li class="included">✓ Research Consultation</li>
-                    </ul>
-                    <button class="btn-select" onclick="selectTier('researcher')">Select Researcher</button>
+                <div
+                    class="pointer-events-none absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-white/5 blur-3xl">
                 </div>
             </div>
 
-            <!-- Buy 2 Get 1 Free Banner -->
-            <div class="promo-banner">
-                <div class="promo-content">
-                    <span class="promo-label">LIMITED TIME OFFER</span>
-                    <h3>Buy 2 Get 1 Free</h3>
-                    <p>Use code <strong>B2G1FREE</strong> at checkout</p>
+            <!-- Toggle -->
+            <div class="mt-8 flex justify-center">
+                <div class="flex bg-white border rounded-full p-1 shadow-sm">
+                    <button id="subBtn"
+                        class="px-5 py-2 rounded-full bg-black text-white text-sm transition-all">Subscribe &amp; Save
+                        10%</button>
+                    <button id="oneBtn" class="px-5 py-2 rounded-full text-sm text-gray-500 transition-all">One-Time
+                        Purchase</button>
                 </div>
             </div>
 
-            <div class="summary-bar">
-                <div class="summary-left">
-                    <span id="selectedTierName">Standard</span>
-                    <span id="selectedTierPrice">$259/month</span>
+            <!-- Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mt-12 items-stretch">
+
+                <!-- STARTER -->
+                <div class="card active bg-white border-2 rounded-2xl overflow-hidden flex flex-col cursor-pointer"
+                    data-tier="starter">
+                    <!-- Image area -->
+                    <div class="bg-[#f5f1ea] flex items-end justify-center pt-6 pb-2 px-6 min-h-[140px]">
+                        <div class="flex items-end justify-center gap-3">
+                            <svg width="48" height="110" viewBox="0 0 48 110" fill="none" class="vial-img">
+                                <rect x="16" y="0" width="16" height="10" rx="3" fill="#0f4c3a" fill-opacity="0.8" />
+                                <rect x="12" y="10" width="24" height="6" rx="2" fill="#0f4c3a" fill-opacity="0.5" />
+                                <rect x="8" y="16" width="32" height="82" rx="7" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.5" />
+                                <rect x="8" y="60" width="32" height="38" rx="0" fill="#f0fdf4" />
+                                <rect x="8" y="90" width="32" height="8" rx="3" fill="#0f4c3a" fill-opacity="0.15" />
+                                <rect x="12" y="20" width="8" height="32" rx="4" fill="#0f4c3a" fill-opacity="0.08" />
+                                <text x="24" y="78" font-size="7" fill="#0f4c3a" fill-opacity="0.6" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <!-- Header -->
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-serif text-xl text-gray-900">Starter Supply</h3>
+                                <p class="text-sm text-gray-500 mt-0.5">1 vial · 30-day research</p>
+                            </div>
+                            <div
+                                class="check w-6 h-6 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="my-3">
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-serif text-3xl text-gray-900" id="price-starter">$80</span>
+                                <span class="text-sm line-through text-gray-400">$89</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">$89 per vial</p>
+                        </div>
+
+
+                        <!-- Features -->
+                        <ul class="space-y-2.5 text-sm flex-1">
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>1× sealed 10mg vial</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Certificate of Analysis (COA)</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Same-day US shipping</li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Free bacteriostatic water
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Priority support</li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Buy 2 Get 1 Free eligible
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Subscriber pricing
+                                locked-in</li>
+                        </ul>
+
+                        <button
+                            class="mt-6 w-full py-3 rounded-xl bg-[#0f4c3a] text-white text-sm font-medium hover:bg-[#0a3a2c] transition-colors">Selected
+                            ›</button>
+                    </div>
                 </div>
-                <button class="btn-primary-large" id="checkoutBtn">Proceed to Secure Checkout</button>
+
+                <!-- STANDARD -->
+                <div class="card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col cursor-pointer"
+                    data-tier="standard">
+                    <div class="bg-[#f5f1ea] flex items-end justify-center pt-6 pb-2 px-6 min-h-[140px]">
+                        <div class="flex items-end justify-center gap-2">
+                            <!-- 3 vials -->
+                            <svg width="38" height="96" viewBox="0 0 38 96" fill="none" class="vial-img opacity-80">
+                                <rect x="12" y="0" width="14" height="9" rx="3" fill="#0f4c3a" fill-opacity="0.6" />
+                                <rect x="9" y="9" width="20" height="5" rx="2" fill="#0f4c3a" fill-opacity="0.35" />
+                                <rect x="6" y="14" width="26" height="72" rx="6" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.2" />
+                                <rect x="6" y="52" width="26" height="34" rx="0" fill="#f0fdf4" />
+                                <rect x="6" y="78" width="26" height="8" rx="3" fill="#0f4c3a" fill-opacity="0.12" />
+                                <text x="19" y="68" font-size="6" fill="#0f4c3a" fill-opacity="0.5" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                            <svg width="44" height="108" viewBox="0 0 44 108" fill="none" class="vial-img">
+                                <rect x="14" y="0" width="16" height="10" rx="3" fill="#0f4c3a" fill-opacity="0.8" />
+                                <rect x="11" y="10" width="22" height="6" rx="2" fill="#0f4c3a" fill-opacity="0.5" />
+                                <rect x="7" y="16" width="30" height="82" rx="7" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.5" />
+                                <rect x="7" y="58" width="30" height="40" rx="0" fill="#f0fdf4" />
+                                <rect x="7" y="88" width="30" height="10" rx="4" fill="#0f4c3a" fill-opacity="0.15" />
+                                <rect x="11" y="20" width="8" height="28" rx="4" fill="#0f4c3a" fill-opacity="0.07" />
+                                <text x="22" y="76" font-size="7" fill="#0f4c3a" fill-opacity="0.6" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                            <svg width="38" height="96" viewBox="0 0 38 96" fill="none" class="vial-img opacity-80">
+                                <rect x="12" y="0" width="14" height="9" rx="3" fill="#0f4c3a" fill-opacity="0.6" />
+                                <rect x="9" y="9" width="20" height="5" rx="2" fill="#0f4c3a" fill-opacity="0.35" />
+                                <rect x="6" y="14" width="26" height="72" rx="6" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.2" />
+                                <rect x="6" y="52" width="26" height="34" rx="0" fill="#f0fdf4" />
+                                <rect x="6" y="78" width="26" height="8" rx="3" fill="#0f4c3a" fill-opacity="0.12" />
+                                <text x="19" y="68" font-size="6" fill="#0f4c3a" fill-opacity="0.5" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-serif text-xl text-gray-900">Standard Supply</h3>
+                                <p class="text-sm text-gray-500 mt-0.5">3 vials · 90-day research</p>
+                            </div>
+                            <div class="check w-6 h-6 rounded-full border-2 border-gray-300 shrink-0"></div>
+                        </div>
+
+                        <div class="my-3">
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-serif text-3xl text-gray-900" id="price-standard">$197</span>
+                                <span class="text-sm line-through text-gray-400">$219</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">$73 per vial · <span
+                                    class="text-green-700 font-medium">Save 18%</span></p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-sm flex-1">
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>3× sealed 10mg vials</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Certificate of Analysis (COA)</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Same-day US shipping</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Free bacteriostatic water (1×)</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Priority customer support</li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Buy 2 Get 1 Free eligible
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-300 line-through"><span
+                                    class="w-4 h-4 rounded-full bg-gray-100 shrink-0"></span>Subscriber pricing
+                                locked-in</li>
+                        </ul>
+
+                        <button
+                            class="mt-6 w-full py-3 rounded-xl bg-[#efe9df] text-gray-700 text-sm font-medium hover:bg-[#e5ddd0] transition-colors">Choose
+                            Standard ›</button>
+                    </div>
+                </div>
+
+                <!-- RESEARCHER -->
+                <div class="card bg-white border border-gray-200 rounded-2xl overflow-hidden flex flex-col cursor-pointer relative"
+                    data-tier="researcher">
+                    <span
+                        class="absolute top-3 right-3 z-10 bg-orange-400 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">★
+                        Most Popular</span>
+
+                    <div class="bg-[#f5f1ea] flex items-end justify-center pt-6 pb-2 px-4 min-h-[140px]">
+                        <div class="flex items-end justify-center gap-1.5">
+                            <!-- 6 vials in two rows feel, shown as 4 front + hint of 2 behind -->
+                            <svg width="32" height="84" viewBox="0 0 32 84" fill="none"
+                                class="vial-img opacity-60 -mr-1" style="margin-bottom:-6px">
+                                <rect x="10" y="0" width="12" height="8" rx="2.5" fill="#0f4c3a" fill-opacity="0.5" />
+                                <rect x="8" y="8" width="16" height="5" rx="1.5" fill="#0f4c3a" fill-opacity="0.3" />
+                                <rect x="5" y="13" width="22" height="62" rx="5" fill="white" fill-opacity="0.7"
+                                    stroke="#e2ded6" stroke-width="1" />
+                                <rect x="5" y="48" width="22" height="27" rx="0" fill="#f0fdf4" fill-opacity="0.7" />
+                                <text x="16" y="62" font-size="5.5" fill="#0f4c3a" fill-opacity="0.4"
+                                    text-anchor="middle" font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                            <svg width="36" height="94" viewBox="0 0 36 94" fill="none" class="vial-img opacity-75"
+                                style="margin-bottom:-3px">
+                                <rect x="11" y="0" width="14" height="9" rx="3" fill="#0f4c3a" fill-opacity="0.65" />
+                                <rect x="8" y="9" width="20" height="5" rx="2" fill="#0f4c3a" fill-opacity="0.4" />
+                                <rect x="5" y="14" width="26" height="72" rx="6" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.2" />
+                                <rect x="5" y="53" width="26" height="33" rx="0" fill="#f0fdf4" />
+                                <text x="18" y="68" font-size="6" fill="#0f4c3a" fill-opacity="0.5" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                            <!-- Center hero vial -->
+                            <svg width="46" height="112" viewBox="0 0 46 112" fill="none" class="vial-img z-10">
+                                <rect x="15" y="0" width="16" height="11" rx="3.5" fill="#0f4c3a" fill-opacity="0.9" />
+                                <rect x="12" y="11" width="22" height="6" rx="2" fill="#0f4c3a" fill-opacity="0.55" />
+                                <rect x="7" y="17" width="32" height="86" rx="8" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.5" />
+                                <rect x="7" y="62" width="32" height="41" rx="0" fill="#f0fdf4" />
+                                <rect x="7" y="92" width="32" height="11" rx="4" fill="#0f4c3a" fill-opacity="0.15" />
+                                <rect x="11" y="22" width="9" height="30" rx="4.5" fill="#0f4c3a" fill-opacity="0.07" />
+                                <text x="23" y="80" font-size="7.5" fill="#0f4c3a" fill-opacity="0.65"
+                                    text-anchor="middle" font-family="sans-serif" font-weight="700">10mg</text>
+                            </svg>
+                            <svg width="36" height="94" viewBox="0 0 36 94" fill="none" class="vial-img opacity-75"
+                                style="margin-bottom:-3px">
+                                <rect x="11" y="0" width="14" height="9" rx="3" fill="#0f4c3a" fill-opacity="0.65" />
+                                <rect x="8" y="9" width="20" height="5" rx="2" fill="#0f4c3a" fill-opacity="0.4" />
+                                <rect x="5" y="14" width="26" height="72" rx="6" fill="white" stroke="#e2ded6"
+                                    stroke-width="1.2" />
+                                <rect x="5" y="53" width="26" height="33" rx="0" fill="#f0fdf4" />
+                                <text x="18" y="68" font-size="6" fill="#0f4c3a" fill-opacity="0.5" text-anchor="middle"
+                                    font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                            <svg width="32" height="84" viewBox="0 0 32 84" fill="none"
+                                class="vial-img opacity-60 -ml-1" style="margin-bottom:-6px">
+                                <rect x="10" y="0" width="12" height="8" rx="2.5" fill="#0f4c3a" fill-opacity="0.5" />
+                                <rect x="8" y="8" width="16" height="5" rx="1.5" fill="#0f4c3a" fill-opacity="0.3" />
+                                <rect x="5" y="13" width="22" height="62" rx="5" fill="white" fill-opacity="0.7"
+                                    stroke="#e2ded6" stroke-width="1" />
+                                <rect x="5" y="48" width="22" height="27" rx="0" fill="#f0fdf4" fill-opacity="0.7" />
+                                <text x="16" y="62" font-size="5.5" fill="#0f4c3a" fill-opacity="0.4"
+                                    text-anchor="middle" font-family="sans-serif" font-weight="600">10mg</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-serif text-xl text-gray-900">Researcher Supply</h3>
+                                <p class="text-sm text-gray-500 mt-0.5">6 vials · 180-day research</p>
+                            </div>
+                            <div class="check w-6 h-6 rounded-full border-2 border-gray-300 shrink-0"></div>
+                        </div>
+
+                        <div class="my-3">
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-serif text-3xl text-gray-900" id="price-researcher">$341</span>
+                                <span class="text-sm line-through text-gray-400">$379</span>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-1">$63 per vial · <span
+                                    class="text-green-700 font-medium">Save 29%</span></p>
+                        </div>
+
+                        <ul class="space-y-2.5 text-sm flex-1">
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>6× sealed 10mg vials</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Certificate of Analysis (COA)</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Free express US shipping</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Free bacteriostatic water (3×)</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Priority support</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Buy 2 Get 1 Free — included</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span
+                                    class="w-4 h-4 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0"><svg
+                                        width="7" height="7" viewBox="0 0 10 10" fill="none">
+                                        <path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span>Subscriber pricing locked-in</li>
+                        </ul>
+
+                        <button
+                            class="mt-6 w-full py-3 rounded-xl bg-[#efe9df] text-gray-700 text-sm font-medium hover:bg-[#e5ddd0] transition-colors">Choose
+                            Researcher ›</button>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Summary -->
+            <div
+                class="mt-10 max-w-xl mx-auto bg-white border rounded-2xl p-5 flex justify-between items-center shadow-sm">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Your selection</p>
+                    <p class="font-serif text-lg text-gray-900 mt-1" id="summaryText">Starter Supply · $80</p>
+                </div>
+                <button
+                    class="bg-[#0f4c3a] text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-[#0a3a2c] transition-colors">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="11" width="18" height="11" rx="2" />
+                        <path d="M7 11V7a5 5 0 0110 0v4" />
+                    </svg>
+                    Continue to Checkout
+                </button>
+            </div>
+
         </div>
     </section>
 
@@ -345,7 +730,8 @@
                         </div>
                     </div>
 
-                    <button class="rounded-lg bg-[#003E2A] px-4 py-2 text-sm text-white hover:opacity-90">
+                    <button onclick="openModal()"
+                        class="rounded-lg bg-[#003E2A] px-4 py-2 text-sm text-white hover:opacity-90">
                         View COA &amp; Lab Results
                     </button>
 
@@ -456,13 +842,12 @@
         </div>
     </section>
 
-
     <!-- Mechanism Section -->
     <section class="bg-[#FEFCF7] px-8 lg:px-20 xl:px-[120px] py-20 flex flex-col items-center">
         <!-- Centered Header Section -->
         <div class="text-center mb-12">
             <h1 class="text-2xl md:text-3xl font-medium text-zinc-800 mb-4 tracking-tight">
-                The PureOne Science
+                How NX-7 works at the molecular level
             </h1>
             <p class="text-sm text-zinc-800 tracking-tight max-w-xl mx-auto">
                 We engineer high-purity peptide sequences designed to optimize physiological systems through precise
@@ -1158,6 +1543,88 @@
         </div>
     </div>
 
+
+    <!-- Modal -->
+    <div id="coaModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+
+        <div class="relative w-full max-w-4xl rounded-3xl bg-[#FAF6EE] shadow-2xl animate-fadeIn">
+
+            <!-- Header -->
+            <div class="flex items-start justify-between border-b border-border/60 p-6">
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-[#003E2A]">
+                        Certificate of Analysis
+                    </p>
+                    <h2 class="mt-1 text-2xl font-semibold text-[#003E2A]">
+                        Lab Test Report
+                    </h2>
+                    <p class="text-sm text-muted-foreground mt-1">
+                        Verified third-party testing for purity, identity & sterility
+                    </p>
+                </div>
+
+                <!-- Close -->
+                <button onclick="closeModal()" class="text-gray-500 hover:text-black text-xl">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Body -->
+            <div class="p-6 space-y-6 max-h-[50vh] overflow-y-auto">
+
+                <!-- Info Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+
+                    <div class="bg-white rounded-xl p-3 border">
+                        <p class="text-xs text-gray-500">Lot Number</p>
+                        <p class="font-medium text-[#003E2A]">2026-031</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-3 border">
+                        <p class="text-xs text-gray-500">Purity</p>
+                        <p class="font-medium text-[#003E2A]">≥ 99%</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-3 border">
+                        <p class="text-xs text-gray-500">Method</p>
+                        <p class="font-medium text-[#003E2A]">HPLC</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-3 border">
+                        <p class="text-xs text-gray-500">Status</p>
+                        <p class="font-medium text-green-600">✔ Verified</p>
+                    </div>
+
+                </div>
+
+                <!-- Report Image -->
+                <div class="bg-white rounded-2xl border">
+                    <img src="/coa-report.png" alt="Report"
+                        class="w-full rounded-lg shadow-sm hover:scale-[1.02] transition duration-300">
+                </div>
+
+                <!-- Notes -->
+                <div class="text-sm text-muted-foreground">
+                    This report confirms the compound meets strict laboratory standards.
+                    Full documentation is included with shipment for verification and compliance.
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="flex items-center justify-between border-t border-border/60 p-4">
+                <p class="text-xs text-gray-500">
+                    Issued by certified third-party laboratory
+                </p>
+
+                <button class="rounded-lg bg-[#003E2A] px-4 py-2 text-sm text-white hover:opacity-90">
+                    Download PDF
+                </button>
+            </div>
+
+        </div>
+
+    </div>
 
     <!-- Three.js for 3D Viewer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>

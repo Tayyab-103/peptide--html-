@@ -261,37 +261,6 @@ function switchImage(src) {
 // ============================================
 // FAQ ACCORDION
 // ============================================
-// function initializeFAQ() {
-//     const faqItems = document.querySelectorAll('.faq-item');
-
-//     faqItems.forEach((item, index) => {
-//         const question = item.querySelector('.faq-question');
-//         const answer = item.querySelector('.faq-answer');
-
-//         // Set answer content from data
-//         if (faqData[index]) {
-//             answer.innerHTML = `<p>${faqData[index].answer}</p>`;
-//         }
-
-//         question.addEventListener('click', function() {
-//             const isOpen = answer.classList.contains('show');
-
-//             // Close all other FAQs
-//             document.querySelectorAll('.faq-answer').forEach(a => {
-//                 a.classList.remove('show');
-//             });
-//             document.querySelectorAll('.faq-question').forEach(q => {
-//                 q.classList.remove('active');
-//             });
-
-//             // Toggle current FAQ
-//             if (!isOpen) {
-//                 answer.classList.add('show');
-//                 question.classList.add('active');
-//             }
-//         });
-//     });
-// }
 
 function initializeFAQ() {
   const faqItems = document.querySelectorAll(".faq-item");
@@ -682,3 +651,110 @@ rows.forEach((row, rowIndex) => {
         `;
   rowsContainer.appendChild(rowDiv);
 });
+
+
+// Modal functions for COA
+function openModal() {
+    const modal = document.getElementById('coaModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeModal() {
+    const modal = document.getElementById('coaModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Close when clicking outside
+document.getElementById('coaModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Subscription Plan 
+let selected = "starter";
+let subscribe = true;
+ 
+const prices = { starter: 89, standard: 219, researcher: 379 };
+ 
+const names = {
+  starter: "Starter Supply",
+  standard: "Standard Supply",
+  researcher: "Researcher Supply"
+};
+ 
+const subBtn = document.getElementById("subBtn");
+const oneBtn = document.getElementById("oneBtn");
+ 
+// ── Toggle ──────────────────────────────────────────────
+subBtn.addEventListener("click", () => {
+  subscribe = true;
+  subBtn.className = "px-5 py-2 rounded-full bg-black text-white text-sm transition-all";
+  oneBtn.className  = "px-5 py-2 rounded-full text-sm text-gray-500 transition-all";
+  update();
+});
+ 
+oneBtn.addEventListener("click", () => {
+  subscribe = false;
+  oneBtn.className  = "px-5 py-2 rounded-full bg-black text-white text-sm transition-all";
+  subBtn.className  = "px-5 py-2 rounded-full text-sm text-gray-500 transition-all";
+  update();
+});
+ 
+// ── Card selection ───────────────────────────────────────
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    selected = card.dataset.tier;
+ 
+    // Reset all cards
+    document.querySelectorAll(".card").forEach(c => {
+      c.classList.remove("active", "border-2");
+      c.classList.add("border", "border-gray-200");
+ 
+      const chk = c.querySelector(".check");
+      if (chk) {
+        chk.className = "check w-6 h-6 rounded-full border-2 border-gray-300 shrink-0";
+        chk.innerHTML = "";
+      }
+ 
+      const btn = c.querySelector("button");
+      if (btn) {
+        btn.className = "mt-6 w-full py-3 rounded-xl bg-[#efe9df] text-gray-700 text-sm font-medium hover:bg-[#e5ddd0] transition-colors";
+        btn.textContent = "Choose " + names[c.dataset.tier].split(" ")[0] + " ›";
+      }
+    });
+ 
+    // Activate clicked card
+    card.classList.add("active", "border-2");
+    card.classList.remove("border", "border-gray-200");
+ 
+    const chk = card.querySelector(".check");
+    if (chk) {
+      chk.className = "check w-6 h-6 rounded-full bg-[#0f4c3a] flex items-center justify-center shrink-0";
+      chk.innerHTML = `<svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    }
+ 
+    const btn = card.querySelector("button");
+    if (btn) {
+      btn.className = "mt-6 w-full py-3 rounded-xl bg-[#0f4c3a] text-white text-sm font-medium hover:bg-[#0a3a2c] transition-colors";
+      btn.textContent = "Selected ›";
+    }
+ 
+    update();
+  });
+});
+ 
+// ── Update prices & summary ──────────────────────────────
+function update() {
+  Object.keys(prices).forEach(t => {
+    const p = subscribe ? Math.round(prices[t] * 0.9) : prices[t];
+    document.getElementById("price-" + t).innerText = "$" + p;
+  });
+ 
+  const current = subscribe ? Math.round(prices[selected] * 0.9) : prices[selected];
+  document.getElementById("summaryText").innerText = names[selected] + " · $" + current;
+}
+ 
+update(); 
