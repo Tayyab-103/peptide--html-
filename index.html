@@ -246,301 +246,680 @@
         </div>
     </section>
 
-    <!-- 3D Product Viewer -->
-    <section class="product-3d-section" id="3d-viewer">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Experience PureOne in 3D</h2>
-                <p>Rotate and zoom to inspect the premium craftsmanship</p>
-            </div>
-            <div class="viewer-wrapper">
-                <canvas id="3dCanvas"></canvas>
-                <div class="viewer-controls">
-                    <p>Drag to rotate • Scroll to zoom</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mechanism Section -->
-    <section class="mechanism-section">
-        <div class="section-container">
-            <h2>How PureOne Works</h2>
-            <div class="mechanism-grid">
-                <div class="mech-card">
-                    <div class="mech-number">1</div>
-                    <h3>Absorption</h3>
-                    <p>Advanced formulation maximizes bioavailability for rapid absorption into cellular systems.</p>
-                </div>
-                <div class="mech-card">
-                    <div class="mech-number">2</div>
-                    <h3>Cellular Signaling</h3>
-                    <p>Peptide chains bind to specific receptors, initiating targeted cellular responses.</p>
-                </div>
-                <div class="mech-card">
-                    <div class="mech-number">3</div>
-                    <h3>Systemic Benefits</h3>
-                    <p>Results compound over time as the body's natural processes amplify therapeutic effects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Quality & Ingredients -->
-    <section class="quality-section">
-        <div class="section-container">
-            <h2>Pharmaceutical Quality Standards</h2>
-            <div class="quality-grid">
-                <div class="quality-card">
-                    <h3>Pure Ingredients</h3>
-                    <ul>
-                        <li>99.8% Purity</li>
-                        <li>No Fillers</li>
-                        <li>No Additives</li>
-                        <li>Pharmaceutical Grade</li>
-                    </ul>
+    <section class=" border-border/60">
+        <div class="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+
+            <!-- Top Card -->
+            <div class="rounded-3xl border border-border bg-[#FEFCF7] p-6 md:p-10">
+
+                <!-- Header -->
+                <div class="flex flex-wrap items-center justify-between gap-4 border-b border-border/60 pb-6">
+                    <div>
+                        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+                            Lab Tested · Purity & Identity
+                        </p>
+                        <h3 class="mt-2 font-serif text-3xl tracking-tight">
+                            Every lot is verified by third-party testing.
+                        </h3>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-wider text-muted-foreground">
+                            3rd-Party Tested
+                        </span>
+                        <span
+                            class="rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-wider text-muted-foreground">
+                            Lot-Tracked
+                        </span>
+                        <span
+                            class="rounded-full border border-border bg-background px-3 py-1 text-[11px] uppercase tracking-wider text-muted-foreground">
+                            Sterility Verified
+                        </span>
+                    </div>
                 </div>
-                <div class="quality-card">
-                    <h3>Lab Testing</h3>
-                    <ul>
-                        <li>HPLC Analysis</li>
-                        <li>Mass Spectrometry</li>
-                        <li>Sterility Tests</li>
-                        <li>Certificate Included</li>
-                    </ul>
+
+                <!-- Checks -->
+                <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#003E2A]">✔</span>
+                            <p class="font-medium">Purity</p>
+                        </div>
+                        <p class="mt-1.5 text-sm text-muted-foreground">
+                            Reported as ≥ 99% on the COA
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#003E2A]">✔</span>
+                            <p class="font-medium">Identity</p>
+                        </div>
+                        <p class="mt-1.5 text-sm text-muted-foreground">
+                            Confirmed identity markers
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#003E2A]">✔</span>
+                            <p class="font-medium">Sterility</p>
+                        </div>
+                        <p class="mt-1.5 text-sm text-muted-foreground">
+                            Tested for research workflow integrity
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#003E2A]">✔</span>
+                            <p class="font-medium">Documentation</p>
+                        </div>
+                        <p class="mt-1.5 text-sm text-muted-foreground">
+                            COA + lab results available
+                        </p>
+                    </div>
+
                 </div>
-                <div class="quality-card">
-                    <h3>Safe Storage</h3>
-                    <ul>
-                        <li>Sterile Vials</li>
-                        <li>UV Protection</li>
-                        <li>Temperature Stable</li>
-                        <li>2-Year Shelf Life</li>
-                    </ul>
+
+                <!-- Bottom Info -->
+                <div class="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-xl bg-[#F1EBDE] p-4">
+
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="flex size-10 items-center justify-center rounded-lg bg-[#003E2A] text-primary-foreground">
+                            📄
+                        </div>
+
+                        <div>
+                            <p class="font-medium">
+                                Lot 2026-031 · Auto-assigned at fulfillment
+                            </p>
+                            <p class="text-xs text-muted-foreground">
+                                COA + lab report shipped with every order
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="rounded-lg bg-[#003E2A] px-4 py-2 text-sm text-white hover:opacity-90">
+                        View COA &amp; Lab Results
+                    </button>
+
                 </div>
             </div>
+
+            <!-- Cards -->
+            <div class="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
+
+                <!-- Card 1 -->
+                <article class="group overflow-hidden rounded-2xl border border-border bg-card">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-secondary">
+                        <img src="/product-side.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-flex items-center gap-1.5 rounded-full bg-[#E5E9E2] px-2.5 py-1 text-[11px] uppercase tracking-wider text-[#003E2A]">
+                            ⚗ Purity
+                        </span>
+                        <h4 class="mt-3 font-serif text-xl">
+                            Formulated to the highest standards
+                        </h4>
+                        <p class="mt-2 text-sm text-muted-foreground">
+                            Every vial is produced under strict quality control protocols, ensuring consistent purity
+                            and concentration across every batch.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="group overflow-hidden rounded-2xl border border-border bg-card">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-secondary">
+                        <img src="/product-packaging.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-flex items-center gap-1.5 rounded-full bg-[#E5E9E2] px-2.5 py-1 text-[11px] uppercase tracking-wider text-[#003E2A]">
+                            📦 Shipping
+                        </span>
+                        <h4 class="mt-3 font-serif text-xl">
+                            From order to your door — handled with care
+                        </h4>
+                        <p class="mt-2 text-sm text-muted-foreground">
+                            Orders are processed promptly and shipped with full tracking — discreet plain packaging
+                            always.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="group overflow-hidden rounded-2xl border border-border bg-card">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-secondary">
+                        <img src="/lab-tested.jpg"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="inline-flex items-center gap-1.5 rounded-full bg-[#E5E9E2] px-2.5 py-1 text-[11px] uppercase tracking-wider text-[#003E2A]">
+                            ✔ Verified
+                        </span>
+                        <h4 class="mt-3 font-serif text-xl">
+                            Complete confidence with every order
+                        </h4>
+                        <p class="mt-2 text-sm text-muted-foreground">
+                            Third-party lab verification with documented purity results — no guesswork.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Peptides Collection -->
+    <section>
+        <h1 class="text-3xl font-semibold text-center mx-auto">Peptides Collection</h1>
+        <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">Our latest breakthrough formulations. Each
+            batch is stringently tested for identity and potency to ensure your research never compromises on quality..
+        </p>
+        <div class="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-10 mx-auto">
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/product-hero.jpg" alt="image">
+            </div>
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/lab-tested.jpg" alt="image">
+            </div>
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/product-packaging.jpg" alt="image">
+            </div>
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/product-peek.jpg" alt="image">
+            </div>
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/product-side.jpg" alt="image">
+            </div>
+            <div
+                class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <img class="h-full w-full object-cover object-center" src="/product-packaging.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mechanism Section -->
+    <section class="bg-[#FEFCF7] px-8 lg:px-20 xl:px-[120px] py-20 flex flex-col items-center">
+        <!-- Centered Header Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-2xl md:text-3xl font-medium text-zinc-800 mb-4 tracking-tight">
+                The PureOne Science
+            </h1>
+            <p class="text-sm text-zinc-800 tracking-tight max-w-xl mx-auto">
+                We engineer high-purity peptide sequences designed to optimize physiological systems through precise
+                molecular signaling and verified bioavailability.
+            </p>
+        </div>
+
+        <!-- Features Grid (8 Cards) -->
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl w-full border-t border-l border-zinc-200 overflow-hidden">
+
+            <!-- Card 1: Max Absorption -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Max Absorption</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Advanced molecular structures ensure maximum
+                    bioavailability for rapid systemic absorption and cellular uptake.</p>
+            </div>
+
+            <!-- Card 2: Cellular Signaling -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Cellular Signaling</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">High-purity sequences designed to trigger specific
+                    receptor interactions for targeted physiological responses.</p>
+            </div>
+
+            <!-- Card 3: 99% HPLC Purity -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10 2v8L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45L14 10V2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">99% HPLC Purity</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Verified structural precision through rigorous testing
+                    to ensure zero contaminants in your research.</p>
+            </div>
+
+            <!-- Card 4: Bio-Optimization -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Bio-Optimization</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Facilitating faster tissue rejuvenation and systemic
+                    recovery through accelerated regenerative signaling.</p>
+            </div>
+
+            <!-- Card 5: Stability & Precision -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v18"></path>
+                            <path d="M5 8l14 0"></path>
+                            <path d="M5 16l14 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Stability & Precision</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Ensuring structural integrity and consistency in every
+                    molecule for predictable, reproducible laboratory results.</p>
+            </div>
+
+            <!-- Card 6: Metabolic Regulation -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20"></path>
+                            <path d="M2 12h20"></path>
+                            <ellipse cx="12" cy="12" rx="10" ry="4"></ellipse>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Metabolic Regulation</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Modulating metabolic pathways to optimize energy
+                    production, tissue repair, and overall systemic performance.</p>
+            </div>
+
+            <!-- Card 7: Targeted Synthesis -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.42 4.58a5 5 0 1 1-7.07 7.07l-1.41 1.42a5 5 0 1 1-7.07-7.07l1.41-1.42"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Targeted Synthesis</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Synthesizing specific peptide structures with high
+                    precision for targeted receptor interactions and cellular responses.</p>
+            </div>
+
+            <!-- Card 8: Systemic Recovery -->
+            <div
+                class="group relative p-6 md:p-8 flex flex-col gap-4 border-r border-b border-zinc-200 transition-all duration-500 cursor-pointer bg-white hover:bg-gradient-to-b hover:from-white hover:to-[#003E2A]/10 hover:scale-[1.09] hover:z-10">
+                <div class="flex items-center gap-2.5 mb-1">
+                    <div class="text-[#003E2A]">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-sm font-medium text-zinc-800 leading-snug">Systemic Recovery</h3>
+                </div>
+                <p class="text-xs text-zinc-600 leading-relaxed">Facilitating faster tissue rejuvenation through
+                    accelerated regenerative signaling processes across the body.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Comparison Table -->
-    <section class="compare-section">
-        <div class="section-container">
-            <h2>How We Compare</h2>
-            <table class="compare-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>PureOne</th>
-                        <th>Generic Peptides</th>
-                        <th>Research Labs</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Purity Guarantee</td>
-                        <td class="highlight">99.8%</td>
-                        <td>95%</td>
-                        <td>98%</td>
-                    </tr>
-                    <tr>
-                        <td>Lab Testing</td>
-                        <td class="highlight">✓ Included</td>
-                        <td>Extra Cost</td>
-                        <td>✓ Included</td>
-                    </tr>
-                    <tr>
-                        <td>Pricing</td>
-                        <td class="highlight">$99-449</td>
-                        <td>$79-299</td>
-                        <td>$199-799</td>
-                    </tr>
-                    <tr>
-                        <td>Customer Support</td>
-                        <td class="highlight">24/7</td>
-                        <td>Business Hours</td>
-                        <td>Email Only</td>
-                    </tr>
-                    <tr>
-                        <td>Shipping Speed</td>
-                        <td class="highlight">48 Hours</td>
-                        <td>5-7 Days</td>
-                        <td>3-5 Days</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <section id="compare" class="border-b border-[#d9d1c7] bg-[#f5efe8]">
+        <div class="mx-auto max-w-6xl px-4 py-12">
 
-    <!-- Reviews Wall -->
-    <section class="reviews-section">
-        <div class="section-container">
-            <h2>Trusted by Researchers</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Outstanding quality and purity. The lab results speak for themselves. Highly
-                        recommend to any serious researcher."</p>
-                    <div class="review-author">
-                        <img src="/customer-1.jpg" alt="James">
-                        <div>
-                            <strong>James Mitchell</strong>
-                            <span>Research Scientist</span>
-                        </div>
+            <!-- Heading -->
+            <div class="text-center mb-8">
+                <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b36b2f]">
+                    WHY AURELIA
+                </p>
+
+                <h2 class="mt-2 font-serif text-3xl">
+                    How we stack up <span class="italic">against the rest.</span>
+                </h2>
+
+                <p class="mt-2 text-sm text-[#5f5a52]">
+                    Not all NX-7 sources are equal. Here's how we compare.
+                </p>
+            </div>
+
+            <!-- Table -->
+            <div class="overflow-hidden rounded-xl border border-[#d9d1c7] bg-[#f7f3ee]">
+
+                <!-- Header -->
+                <div class="grid grid-cols-4 gap-2 bg-[#0b4d3b] px-4 py-3 text-white text-sm">
+                    <div class="uppercase tracking-wide text-[10px] opacity-80">Feature</div>
+
+                    <div class="text-center">
+                        <div class="text-[10px] text-[#f0a45d] uppercase">★ Best</div>
+                        <div class="italic text-sm">Aurelia</div>
+                    </div>
+
+                    <div class="text-center text-[10px] uppercase opacity-80">
+                        Others
+                    </div>
+
+                    <div class="text-center text-[10px] uppercase opacity-80">
+                        Rx
                     </div>
                 </div>
 
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Fast shipping, excellent customer service, and the peptides arrived
-                        perfectly packaged. Best source I've found."</p>
-                    <div class="review-author">
-                        <img src="/customer-2.jpg" alt="Sarah">
-                        <div>
-                            <strong>Dr. Sarah Chen</strong>
-                            <span>Biochemist</span>
+                <!-- Rows -->
+                <div class="divide-y divide-[#d9d1c7] text-sm">
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>Third-Party Lab Verified</div>
+                        <div class="text-center text-[#0b4d3b] font-medium">Every batch</div>
+                        <div class="text-center">Sometimes</div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs">✓</span>
                         </div>
                     </div>
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>&gt;99% Purity Guaranteed</div>
+                        <div class="text-center text-[#0b4d3b] font-medium">Documented</div>
+                        <div class="text-center">Unverified</div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs">✓</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>No Prescription Required</div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs">✓</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs">✓</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-red-100 text-red-500 text-xs">✕</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>Ships Same Day</div>
+                        <div class="text-center text-[#0b4d3b] font-medium">Order by 2pm</div>
+                        <div class="text-center">Varies</div>
+                        <div class="text-center">Days–weeks</div>
+                    </div>
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>Price per 10mg</div>
+                        <div class="text-center text-[#0b4d3b] font-medium">$89</div>
+                        <div class="text-center">$70 – $130</div>
+                        <div class="text-center">$900 – $1,400+</div>
+                    </div>
+
+                    <div class="grid grid-cols-4 items-center px-4 py-3">
+                        <div>60-Day Guarantee</div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs">✓</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-red-100 text-red-500 text-xs">✕</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <span
+                                class="h-5 w-5 flex items-center justify-center rounded-full bg-red-100 text-red-500 text-xs">✕</span>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"The transparency and attention to detail is remarkable. Every batch is
-                        tested and certified. Worth every penny."</p>
-                    <div class="review-author">
-                        <img src="/customer-3.jpg" alt="Robert">
-                        <div>
-                            <strong>Dr. Robert Johnson</strong>
-                            <span>Clinical Researcher</span>
-                        </div>
-                    </div>
+                <!-- Footer -->
+                <div class="flex items-center justify-between px-4 py-3 bg-[#f3ede5] text-sm">
+                    <span class="italic">Join 2,000+ researchers</span>
+
+                    <a href="#buy" class="bg-[#0b4d3b] text-white px-4 py-2 rounded-md text-xs hover:bg-[#093c2f]">
+                        Order
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="section-container">
-            <h2>Simple to Prepare, Ready to Ship</h2>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Choose Your Supply</h3>
-                    <p>Select your dosage and quantity from our tiered options</p>
+    <section class="border-b border-[#e5ddd3] bg-[#f4efe9]">
+        <div class="mx-auto max-w-6xl px-4 py-20">
+
+            <!-- Heading -->
+            <div class="text-center max-w-2xl mx-auto">
+                <p class="font-mono text-[11px] tracking-[0.25em] text-[#c47a2c] uppercase">
+                    HOW IT WORKS
+                </p>
+
+                <h2 class="mt-4 font-serif text-4xl leading-tight text-[#1f1a17]">
+                    Simple to order. Simple to prepare.
+                    <br />
+                    <span class="italic">Ready to ship.</span>
+                </h2>
+
+                <p class="mt-5 text-[#6b6257] text-base leading-relaxed">
+                    Select your supply and we handle the rest — fast shipping, full
+                    documentation, and everything you need to get started.
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="relative mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+                <!-- Connecting line -->
+                <div class="hidden md:block absolute top-12 left-0 right-0 h-px bg-[#e2d9cf]"></div>
+
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div
+                        class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#e2d9cf] bg-[#f4efe9] shadow-sm">
+                        <span class="font-serif text-3xl italic text-[#0b4d3b]">01</span>
+                    </div>
+
+                    <h3 class="mt-8 font-serif text-2xl text-[#1f1a17]">
+                        Select your supply
+                    </h3>
+
+                    <p class="mt-3 text-sm text-[#6b6257] leading-relaxed max-w-xs mx-auto">
+                        Choose the vial size that best suits your needs. Larger supply tiers offer better value and
+                        ensure uninterrupted availability.
+                    </p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Secure Checkout</h3>
-                    <p>Fast, encrypted payment with multiple options available</p>
+
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div
+                        class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#e2d9cf] bg-[#f4efe9] shadow-sm">
+                        <span class="font-serif text-3xl italic text-[#0b4d3b]">02</span>
+                    </div>
+
+                    <h3 class="mt-8 font-serif text-2xl text-[#1f1a17]">
+                        Reconstitute properly
+                    </h3>
+
+                    <p class="mt-3 text-sm text-[#6b6257] leading-relaxed max-w-xs mx-auto">
+                        Your peptide arrives as a sterile lyophilized powder. Reconstitute with bacteriostatic water — a
+                        full prep guide is included.
+                    </p>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Discreet Shipping</h3>
-                    <p>Ships within 48 hours with discreet packaging</p>
+
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div
+                        class="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#e2d9cf] bg-[#f4efe9] shadow-sm">
+                        <span class="font-serif text-3xl italic text-[#0b4d3b]">03</span>
+                    </div>
+
+                    <h3 class="mt-8 font-serif text-2xl text-[#1f1a17]">
+                        Store appropriately
+                    </h3>
+
+                    <p class="mt-3 text-sm text-[#6b6257] leading-relaxed max-w-xs mx-auto">
+                        Maintain recommended storage conditions as indicated on the label to preserve material integrity
+                        and stability over time.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Founder Note -->
-    <section class="founder-section">
-        <div class="section-container founder-grid">
-            <div class="founder-image">
-                <img src="/founder.jpg" alt="Dr. Marcus Reid, Founder">
+    <section class="border-b border-border/60 bg-[#003E2A] text-primary-foreground">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
+
+            <!-- Image -->
+            <div class="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <img src="/founder.jpg" alt="Holding the Aurelia NX-7 vial" class="w-full h-full object-cover" />
             </div>
-            <div class="founder-text">
-                <h2>From Our Founder</h2>
-                <p>"PureOne Peptides was born from frustration with low-quality research peptides in the market. After
-                    15 years in pharmaceutical research, I decided to create the product I wished existed:
-                    laboratory-verified, pharmaceutical-grade peptides at fair prices.</p>
-                <p>Every vial is tested and certified. Every customer gets transparent lab results. We believe in
-                    integrity above all else."</p>
-                <p class="founder-sig">— Dr. Marcus Reid, Ph.D.<br><strong>PureOne Peptides Founder</strong></p>
+
+            <!-- Content -->
+            <div>
+                <p class="font-mono text-xs uppercase tracking-[0.2em] text-[#C16E2D]">
+                    Stock won't last
+                </p>
+
+                <h2 class="mt-3 font-serif text-white text-4xl leading-[1.05] tracking-tight md:text-6xl">
+                    The most researched peptide,
+                    <br />
+                    <span class="italic">available now.</span>
+                </h2>
+
+                <p class="mt-5 max-w-lg text-white leading-relaxed">
+                    Tri-receptor technology. Pharmaceutical-grade purity. Third-party
+                    verified. This is the compound everyone is talking about — and
+                    supply is running low. If you've been on the fence, this is
+                    your sign.
+                </p>
+
+                <!-- Buttons -->
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+
+                    <!-- Primary CTA -->
+                    <a href="#buy"
+                        class="inline-flex items-center gap-2 rounded-xl bg-[#C16E2D] px-6 py-4 text-sm font-medium text-white hover:opacity-90">
+                        Secure My Order Now
+
+                        <!-- Arrow Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M13 5l7 7-7 7" />
+                        </svg>
+                    </a>
+
+                    <!-- Secondary CTA -->
+                    <a href="#science"
+                        class="inline-flex items-center gap-2 rounded-xl border border-primary-foreground/20 px-6 py-4 text-sm font-medium hover:bg-primary-foreground/5 text-white">
+                        Read the Science
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="mt-8 grid max-w-md grid-cols-3 gap-6 border-t border-primary-foreground/10 pt-6 text-sm ">
+
+                    <div>
+                        <p class="font-serif text-2xl text-white">2,184</p>
+                        <p class="text-xs uppercase tracking-wider text-white">
+                            Verified reviews
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-serif text-2xl text-white">4.9★</p>
+                        <p class="text-xs uppercase tracking-wider text-white">
+                            Avg. rating
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-serif text-2xl text-white">98%</p>
+                        <p class="text-xs uppercase tracking-wider text-white">
+                            Reorder
+                        </p>
+                    </div>
+
+                </div>
             </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-[#FEFCF7] py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="inline-block bg-neutral-100 border border-neutral-300 rounded-full px-4 py-1 mb-3">
+                    <span class="text-xs text-neutral-600">Trusted by researchers</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-medium text-neutral-900 mb-4">
+                    What professionals are saying
+                </h2>
+                <p class="text-neutral-600 text-sm max-w-96 mx-auto">
+                    Feedback from scientists, researchers, and professionals who rely on purity, precision, and
+                    consistency.
+                </p>
+            </div>
+
+            <div class="space-y-6" id="rows-container"></div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="section-container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How is PureOne tested and verified?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Every batch of PureOne undergoes rigorous testing including HPLC analysis, mass spectrometry,
-                            and sterility testing. A full lab certificate of analysis is included with every order,
-                            detailing purity, potency, and quality metrics.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        What is the shelf life?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>PureOne has a shelf life of 2 years when stored properly in a cool, dark place. Our
-                            UV-protected vials maintain stability and potency throughout this entire period. We
-                            recommend storing at 2-8°C for optimal preservation.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        How quickly does it ship?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Orders ship within 48 hours of confirmation. We offer both standard and priority shipping
-                            options. All packages are discreetly labeled and packaged for privacy. Domestic delivery
-                            typically takes 2-4 business days.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Do you offer international shipping?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, we ship worldwide with customs-compliant packaging. International orders may take 7-14
-                            business days depending on destination. We handle all customs documentation and ensure
-                            compliance with local regulations.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        What is your return policy?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We offer a 30-day money-back guarantee. If you're not satisfied with your order for any
-                            reason, contact our support team for a full refund. No questions asked. We stand behind the
-                            quality of our products.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Is my order private and secure?
-                        <span class="faq-toggle">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. All orders are processed through encrypted secure checkout. Packages are labeled
-                            discreetly with no product names visible. We never share customer information with third
-                            parties and delete all data after 90 days.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <section id="faq" class="py-16 px-6 bg-[#FAF6EE]">
         <div class="max-w-6xl mx-auto">
 
@@ -653,23 +1032,59 @@
 
 
     <!-- Final CTA -->
-    <section class="final-cta">
-        <div class="cta-content">
-            <h2>Ready to Begin Your Research?</h2>
-            <p>Join thousands of researchers who trust PureOne Peptides</p>
-            <button class="btn-primary" onclick="scrollToElement('supply')">Get Started Now</button>
-        </div>
-    </section>
+    <section class="border-b border-border/60">
+        <div class="mx-auto max-w-7xl px-4 py-16 lg:py-20">
 
-    <!-- Email Capture -->
-    <section class="email-capture">
-        <div class="capture-container">
-            <h3>Stay Updated</h3>
-            <p>Get exclusive updates, research insights, and special offers</p>
-            <form class="email-form" id="emailForm">
-                <input type="email" placeholder="your@email.com" required>
-                <button type="submit" class="btn-secondary">Subscribe</button>
-            </form>
+            <div class="rounded-3xl border border-border bg-[#FEFCF7] p-8 md:p-12">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-5 md:items-center">
+
+                    <!-- Left Content -->
+                    <div class="md:col-span-3">
+                        <p class="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+                            Insider list
+                        </p>
+
+                        <h3 class="mt-2 font-serif text-3xl leading-tight md:text-4xl">
+                            Early access to <span class="italic">deals on our peptides.</span>
+                        </h3>
+
+                        <p class="mt-3 text-muted-foreground leading-relaxed">
+                            Be the first to know about restocks, flash sales, and
+                            subscriber-only discounts — before they go public.
+                        </p>
+                    </div>
+
+                    <!-- Form -->
+                    <div id="formContainer" class="md:col-span-2">
+                        <form id="emailForm" class="flex flex-col gap-3">
+                            <input id="emailInput" type="email" required placeholder="your@email.com"
+                                class="rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:border-primary" />
+
+                            <button type="submit"
+                                class="rounded-xl bg-[#003E2A] px-4 py-3 text-sm font-medium text-white hover:bg-[#003E2A]/90">
+                                Get Early Access
+                            </button>
+
+                            <p class="text-[11px] text-muted-foreground">
+                                No spam ever ·
+                                <a href="#" class="underline">Privacy policy</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Success Message (hidden initially) -->
+                    <div id="successBox" class="hidden md:col-span-2">
+                        <div class="flex items-center gap-3 rounded-xl bg-primary/10 p-4 text-primary">
+                            <span>✔</span>
+                            <p class="text-sm font-medium">
+                                You're in. Watch for our next email.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -743,232 +1158,6 @@
         </div>
     </div>
 
-
-    <div class="relative">
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-200 to-blue-200">
-            <h2 class="text-4xl font-bold">The First slide</h2>
-            <p class="mt-2">Scroll Down for next slide</p>
-        </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white">
-            <h2 class="text-4xl font-bold">The Second slide</h2>
-            <p class="mt-2">Scroll Down for next slide</p>
-        </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-800 to-pink-800 text-white">
-            <h2 class="text-4xl font-bold">The Third slide</h2>
-            <p class="mt-2">Scroll Down</p>
-        </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
-            <h2 class="text-4xl font-bold">The Fourth slide</h2>
-        </div>
-    </div>
-
-
-    <div class="relative font-inter antialiased">
-
-        <main class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
-            <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
-
-                <!-- Testimonials with Tooltip -->
-                <section class="text-center">
-                    <div class="font-nycd text-xl text-indigo-500 mb-4">
-                        <span class="relative inline-flex">
-                            <span>Our promise</span>
-                            <svg class="fill-indigo-500 absolute bottom-0" xmlns="http://www.w3.org/2000/svg"
-                                width="132" height="4">
-                                <path fill-opacity=".4" fill-rule="evenodd"
-                                    d="M131.014 2.344s-39.52 1.318-64.973 1.593c-25.456.24-65.013-.282-65.013-.282C-.34 3.623-.332 1.732.987 1.656c0 0 39.52-1.32 64.973-1.593 25.455-.24 65.012.282 65.012.282 1.356.184 1.37 1.86.042 1.999" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="text-5xl leading-tight font-bold text-slate-900">
-                        <span
-                            class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200">We'll
-                            help you boost your revenues</span>
-                        <div class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200 relative inline-flex justify-center w-[52px] h-[52px] align-middle -translate-y-1 z-50"
-                            x-data="{ open: false }" :class="{ 'active': open }" @mouseover.outside="open = false"
-                            @focusout="await $nextTick();!$el.contains($focus.focused()) && (open = false)">
-                            <button
-                                class="h-full w-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-[20px] rotate-[4deg] transition duration-200 ease-[cubic-bezier(.5,.85,.25,1.8)] delay-100"
-                                :class="{ 'rotate-0': open }" aria-labelledby="testimonial-01" @mouseover="open = true"
-                                @focus="open = true">
-                                <img class="absolute top-1/2 -translate-y-1/2 rounded-[inherit]"
-                                    src="https://cruip-tutorials.vercel.app/testimonial-tooltip/testimonial-01.jpg"
-                                    width="52" height="52" alt="Testimonial 01">
-                            </button>
-                            <div id="testimonial-01" role="tooltip" class="absolute top-full pt-5 [&[x-cloak]]:hidden"
-                                x-ref="tooltip" x-cloak>
-                                <div class="relative w-80 after:absolute after:-top-1.5 after:left-1/2 after:-translate-x-1/2 after:h-3 after:w-3 after:rounded-tl-sm after:rotate-45 after:bg-slate-900"
-                                    x-show="open"
-                                    x-transition:enter="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-200 delay-100"
-                                    x-transition:enter-start="opacity-0 translate-y-2"
-                                    x-transition:enter-end="opacity-100 translate-y-0"
-                                    x-transition:leave="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-100 delay-100"
-                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                                    <div class="relative bg-slate-900 p-5 rounded-3xl shadow-xl text-left text-sm text-slate-200 font-medium space-y-3"
-                                        x-init="$watch('open', value => { $nextTick(() => {
-                                        $refs.tooltip.getBoundingClientRect().left < 0 ? $el.style.left = Math.abs($refs.tooltip.getBoundingClientRect().left) + $root.getBoundingClientRect().left - 4 + 'px' : $el.style.left = null;
-                                        $refs.tooltip.getBoundingClientRect().right > document.documentElement.offsetWidth ? $el.style.right = Math.abs($refs.tooltip.getBoundingClientRect().right) - $root.getBoundingClientRect().right - 4 + 'px' : $el.style.right = null;
-                                    } )} )">
-                                        <svg class="fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width="17"
-                                            height="14" aria-hidden="true">
-                                            <path fill-rule="nonzero"
-                                                d="M2.014 3.68c.276-1.267.82-2.198 1.629-2.79C4.453.295 5.627 0 7.167 0c.514 0 .908.02 1.185.061L5.035 10.49c-.75 2.494-2.429 3.66-5.035 3.496L2.014 3.68Zm8.648 0c.237-1.227.77-2.147 1.6-2.76C13.09.307 14.274 0 15.814 0c.514 0 .909.02 1.185.061L13.683 10.49c-.79 2.494-2.468 3.66-5.035 3.496L10.662 3.68Z" />
-                                        </svg>
-                                        <p>
-                                            This component is AWESOME. The hover feature is well-thought-out. Even the
-                                            smaller details, like using colors, really helps everything stay organized.
-                                            Cruip is amazing and I really enjoy using it.
-                                        </p>
-                                        <p>
-                                            Mary Smith <span class="text-slate-600">-</span> <span
-                                                class="text-slate-400">Software Engineer</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <span
-                            class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200">manage
-                            payrolls</span>
-                        <div class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200 relative inline-flex justify-center w-[52px] h-[52px] align-middle -translate-y-1 z-40"
-                            x-data="{ open: false }" :class="{ 'active': open }" @mouseover.outside="open = false"
-                            @focusout="await $nextTick();!$el.contains($focus.focused()) && (open = false)">
-                            <button
-                                class="h-full w-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-[20px] -rotate-[4deg] transition duration-200 ease-[cubic-bezier(.5,.85,.25,1.8)] delay-100"
-                                :class="{ 'rotate-0': open }" aria-labelledby="testimonial-02" @mouseover="open = true"
-                                @focus="open = true">
-                                <img class="absolute top-1/2 -translate-y-1/2 rounded-[inherit]"
-                                    src="https://cruip-tutorials.vercel.app/testimonial-tooltip/testimonial-02.jpg"
-                                    width="52" height="52" alt="Testimonial 02">
-                            </button>
-                            <div id="testimonial-02" role="tooltip" class="absolute top-full pt-5 [&[x-cloak]]:hidden"
-                                x-ref="tooltip" x-cloak>
-                                <div class="relative w-80 after:absolute after:-top-1.5 after:left-1/2 after:-translate-x-1/2 after:h-3 after:w-3 after:rounded-tl-sm after:rotate-45 after:bg-slate-900"
-                                    x-show="open"
-                                    x-transition:enter="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-200 delay-100"
-                                    x-transition:enter-start="opacity-0 translate-y-2"
-                                    x-transition:enter-end="opacity-100 translate-y-0"
-                                    x-transition:leave="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-100 delay-100"
-                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                                    <div class="relative bg-slate-900 p-5 rounded-3xl shadow-xl text-left text-sm text-slate-200 font-medium space-y-3"
-                                        x-init="$watch('open', value => { $nextTick(() => {
-                                        $refs.tooltip.getBoundingClientRect().left < 0 ? $el.style.left = Math.abs($refs.tooltip.getBoundingClientRect().left) + $root.getBoundingClientRect().left - 4 + 'px' : $el.style.left = null;
-                                        $refs.tooltip.getBoundingClientRect().right > document.documentElement.offsetWidth ? $el.style.right = Math.abs($refs.tooltip.getBoundingClientRect().right) - $root.getBoundingClientRect().right - 4 + 'px' : $el.style.right = null;
-                                    } )} )">
-                                        <svg class="fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width="17"
-                                            height="14" aria-hidden="true">
-                                            <path fill-rule="nonzero"
-                                                d="M2.014 3.68c.276-1.267.82-2.198 1.629-2.79C4.453.295 5.627 0 7.167 0c.514 0 .908.02 1.185.061L5.035 10.49c-.75 2.494-2.429 3.66-5.035 3.496L2.014 3.68Zm8.648 0c.237-1.227.77-2.147 1.6-2.76C13.09.307 14.274 0 15.814 0c.514 0 .909.02 1.185.061L13.683 10.49c-.79 2.494-2.468 3.66-5.035 3.496L10.662 3.68Z" />
-                                        </svg>
-                                        <p>
-                                            This component is AWESOME. The hover feature is well-thought-out. Even the
-                                            smaller details, like using colors, really helps everything stay organized.
-                                            Cruip is amazing and I really enjoy using it.
-                                        </p>
-                                        <p>
-                                            Mary Smith <span class="text-slate-600">-</span> <span
-                                                class="text-slate-400">Software Engineer</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <span
-                            class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200">and
-                            save up to 50+ hours in duties every month</span>
-                        <div class="[&:has(~.active)]:opacity-25 [&.active~*]:opacity-25 transition-opacity duration-200 relative inline-flex justify-center w-[52px] h-[52px] align-middle -translate-y-1 z-30"
-                            x-data="{ open: false }" :class="{ 'active': open }" @mouseover.outside="open = false"
-                            @focusout="await $nextTick();!$el.contains($focus.focused()) && (open = false)">
-                            <button
-                                class="h-full w-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-[20px] rotate-[4deg] transition duration-200 ease-[cubic-bezier(.5,.85,.25,1.8)] delay-100"
-                                :class="{ 'rotate-0': open }" aria-labelledby="testimonial-03" @mouseover="open = true"
-                                @focus="open = true">
-                                <img class="absolute top-1/2 -translate-y-1/2 rounded-[inherit]"
-                                    src="https://cruip-tutorials.vercel.app/testimonial-tooltip/testimonial-03.jpg"
-                                    width="52" height="52" alt="Testimonial 03">
-                            </button>
-                            <div id="testimonial-03" role="tooltip" class="absolute top-full pt-5 [&[x-cloak]]:hidden"
-                                x-ref="tooltip" x-cloak>
-                                <div class="relative w-80 after:absolute after:-top-1.5 after:left-1/2 after:-translate-x-1/2 after:h-3 after:w-3 after:rounded-tl-sm after:rotate-45 after:bg-slate-900"
-                                    x-show="open"
-                                    x-transition:enter="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-200 delay-100"
-                                    x-transition:enter-start="opacity-0 translate-y-2"
-                                    x-transition:enter-end="opacity-100 translate-y-0"
-                                    x-transition:leave="transition ease-[cubic-bezier(.5,.85,.25,1.8)] duration-100 delay-100"
-                                    x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                                    <div class="relative bg-slate-900 p-5 rounded-3xl shadow-xl text-left text-sm text-slate-200 font-medium space-y-3"
-                                        x-init="$watch('open', value => { $nextTick(() => {
-                                        $refs.tooltip.getBoundingClientRect().left < 0 ? $el.style.left = Math.abs($refs.tooltip.getBoundingClientRect().left) + $root.getBoundingClientRect().left - 4 + 'px' : $el.style.left = null;
-                                        $refs.tooltip.getBoundingClientRect().right > document.documentElement.offsetWidth ? $el.style.right = Math.abs($refs.tooltip.getBoundingClientRect().right) - $root.getBoundingClientRect().right - 4 + 'px' : $el.style.right = null;
-                                    } )} )">
-                                        <svg class="fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width="17"
-                                            height="14" aria-hidden="true">
-                                            <path fill-rule="nonzero"
-                                                d="M2.014 3.68c.276-1.267.82-2.198 1.629-2.79C4.453.295 5.627 0 7.167 0c.514 0 .908.02 1.185.061L5.035 10.49c-.75 2.494-2.429 3.66-5.035 3.496L2.014 3.68Zm8.648 0c.237-1.227.77-2.147 1.6-2.76C13.09.307 14.274 0 15.814 0c.514 0 .909.02 1.185.061L13.683 10.49c-.79 2.494-2.468 3.66-5.035 3.496L10.662 3.68Z" />
-                                        </svg>
-                                        <p>
-                                            This component is AWESOME. The hover feature is well-thought-out. Even the
-                                            smaller details, like using colors, really helps everything stay organized.
-                                            Cruip is amazing and I really enjoy using it.
-                                        </p>
-                                        <p>
-                                            Mary Smith <span class="text-slate-600">-</span> <span
-                                                class="text-slate-400">Software Engineer</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End: Testimonials with Tooltip -->
-
-            </div>
-
-        </main>
-
-        <!-- Page footer -->
-        <footer class="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
-            <a class="text-xs text-slate-500 hover:underline" href="https://cruip.com">&copy;Cruip - Tailwind CSS
-                templates</a>
-        </footer>
-
-        <!-- Banner with links -->
-        <div class="fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50"
-            :class="bannerOpen ? '' : 'hidden'" x-data="{ bannerOpen: false }">
-            <div class="bg-slate-800 text-sm p-3 md:rounded shadow flex justify-between">
-                <div class="text-slate-500 inline-flex">
-                    <a class="font-medium hover:underline text-slate-300"
-                        href="https://cruip.com/creating-a-tooltip-like-testimonial-with-tailwind-and-alpine-js/"
-                        target="_blank">
-                        Read Tutorial
-                    </a>
-                    <span class="italic px-1.5">or</span>
-                    <a class="font-medium hover:underline text-indigo-500 flex items-center"
-                        href="https://github.com/cruip/cruip-tutorials/blob/main/testimonial-tooltip/index.html"
-                        target="_blank" rel="noreferrer">
-                        <span>Download</span>
-                        <svg class="fill-indigo-400 ml-1" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
-                            <path d="m1.649 8.514-.91-.915 5.514-5.523H2.027l.01-1.258h6.388v6.394H7.158l.01-4.226z" />
-                        </svg>
-                    </a>
-                </div>
-                <button class="text-slate-500 hover:text-slate-400 pl-2 ml-3 border-l border-slate-700"
-                    @click="bannerOpen = false">
-                    <span class="supports-[counter-set]:sr-only">Close</span>
-                    <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 16 16">
-                        <path
-                            d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-    </div>
 
     <!-- Three.js for 3D Viewer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
